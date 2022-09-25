@@ -1,6 +1,6 @@
 const about=() =>{ 
     $.ajax({
-        url:'page/about.html',
+        url:'pages/about.html',
         method:'get',
         dataType:'text html',
         success:function(data){
