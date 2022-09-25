@@ -1,0 +1,71 @@
+html,body {
+    margin:0px;
+    padding:0px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: blueviolet;
+}
+/*header classes*/
+.hdr {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    margin:1em;
+    border-bottom: 3px solid blue;
+}
+
+.hdrImg {   
+    border: 3px solid black;
+    border-radius: 5px;
+    height:5rem;
+}
+
+.hdrTitel{
+    margin:unset;
+    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darkblue;
+    font-style: italic;
+    align-self: flex-end;
+    text-align:center;
+    flex:1;
+   font-size: 4rem;;
+}
+
+.hdrMenu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    align-items: flex-end;
+}
+
+.hdrBtn{
+    all:unset;
+
+    cursor:pointer;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.hdrBtn:hover {
+    color:silver;    
+}
+
+.main{
+    flex:1;
+}
+
+/*footer classes*/
+.footer{
+    background-color:black;
+    color:white;
+    border-top:3px solid blue;
+    height:100px;
+}
