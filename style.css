@@ -20,7 +20,7 @@ html,body {
 .hdrImg {   
     position: fixed;
     border: 3px solid white;
-    border-radius: 5px;
+    border-radius:50%;
     height:10rem;
     top:1rem;
     left: 1rem;;
@@ -78,4 +78,23 @@ html,body {
     color:white;
     border-top:3px solid blue;
     height:100px;
+}
+
+/* page classes */
+.aboutMe {
+    background-color: white;
+    border:3px solid blueviolet;
+    color:black;
+    position:relative;
+}
+
+.aboutMe:after{
+    content:'';
+    position: absolute;
+    z-index:-1;
+    background-color: white;
+    top:-5px;
+    bottom:-5px;
+    left:-5px;
+    right:-5px;
 }
