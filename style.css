@@ -62,6 +62,12 @@ html,body {
     flex:1;
 }
 
+#content {
+    max-width: 50%;
+    margin: 1em auto;
+}
+
+
 /*footer classes*/
 .footer{
     background-color:black;
