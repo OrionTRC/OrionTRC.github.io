@@ -14,19 +14,21 @@ html,body {
 .hdr {
     display: flex;
     justify-content: flex-start;
-    gap: 1em;
-    margin:1em;
-    border-bottom: 3px solid blue;
+    margin:1em;  
 }
 
 .hdrImg {   
-    border: 3px solid black;
+    position: fixed;
+    border: 3px solid white;
     border-radius: 5px;
-    height:5rem;
+    height:10rem;
+    top:1rem;
+    left: 1rem;;
 }
 
 .hdrTitel{
     margin:unset;
+    margin-left:11rem;
     font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:darkblue;
     font-style: italic;
@@ -34,6 +36,7 @@ html,body {
     text-align:center;
     flex:1;
    font-size: 4rem;;
+   border-bottom: 3px solid blue;
 }
 
 .hdrMenu {
@@ -42,7 +45,8 @@ html,body {
     gap: 1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
-    align-items: flex-end;
+    align-items: flex-end;  
+    border-bottom: 3px solid blue;
 }
 
 .hdrBtn{
