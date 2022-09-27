@@ -14,7 +14,7 @@ html,body {
 .hdr {
     display: flex;
     justify-content: flex-start;
-    margin:1em;  
+    margin:1em 1em 0 1em;  
 }
 
 .hdrImg {   
@@ -83,18 +83,15 @@ html,body {
 /* page classes */
 .aboutMe {
     background-color: white;
-    border:3px solid blueviolet;
+    border:3px solid black;
     color:black;
     position:relative;
+    padding:1rem;
+    box-shadow: 1rem 1rem 0 2rem blue;
 }
 
-.aboutMe:after{
-    content:'';
-    position: absolute;
-    z-index:-1;
-    background-color: white;
-    top:-5px;
-    bottom:-5px;
-    left:-5px;
-    right:-5px;
+.sidebar {
+    width:20rem;
+    border-right:3px solid blue;
+    height:100%;
 }
