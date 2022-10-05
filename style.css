@@ -1,6 +1,6 @@
-html,body {
-    margin:0px;
-    padding:0px;
+html, body {
+    margin: 0px;
+    padding: 0px;
 }
 
 .page {
@@ -8,35 +8,45 @@ html,body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    /* background-image: conic-gradient(blueviolet 60deg,blue,darkblue,black,darkblue,blue,blueviolet 300deg); */
+    background-image: linear-gradient(110deg, blueviolet, blue, darkblue, black);
 }
+
 /*header classes*/
 .hdr {
     display: flex;
     justify-content: flex-start;
-    margin:1em 1em 0 1em;  
+    margin: 1em 1em 0 1em;
 }
 
-.hdrImg {   
+.hdrImg {
     position: fixed;
     border: 3px solid white;
-    border-radius:50%;
-    height:10rem;
-    top:1rem;
-    left: 1rem;;
+    border-radius: 50%;
+    height: 10rem;
+    top: 1rem;
+    left: 1rem;
 }
 
-.hdrTitel{
-    margin:unset;
-    margin-left:11rem;
-    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:darkblue;
-    font-style: italic;
+.hdrTitel {
+    margin: unset;
+    margin-left: 11rem;
     align-self: flex-end;
-    text-align:center;
-    flex:1;
-   font-size: 4rem;;
-   border-bottom: 3px solid blue;
+    text-align: center;
+    flex: 1;
+    border-bottom: 3px solid silver;
+}
+
+.hdrTitel h1 {
+    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    background-image: linear-gradient(110deg, black,silver,lightblue );
+    background-clip: text;
+    font-size: 4rem;
+    margin:0 auto;
+    display:inline;
 }
 
 .hdrMenu {
@@ -45,26 +55,27 @@ html,body {
     gap: 1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
-    align-items: flex-end;  
-    border-bottom: 3px solid blue;
+    align-items: flex-end;
+    border-bottom: 3px solid silver;
 }
 
-.hdrBtn{
-    all:unset;
+.hdrBtn {
+    all: unset;
 
-    cursor:pointer;
-    color:white;
+    cursor: pointer;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
 }
 
 .hdrBtn:hover {
-    color:silver;    
+    color: silver;
 }
+
 /* main classes */
-.main{
-    flex:1;
-    display:flex;
+.main {
+    flex: 1;
+    display: flex;
 }
 
 #content {
@@ -73,25 +84,28 @@ html,body {
 }
 
 .sidebar {
-    width:20rem;
-    border-right:3px solid blue;
-    height:100%;
+    width: 20rem;
+    border-right: 3px solid silver;
+    height: 100%;
 }
+
 /*footer classes*/
-.footer{
-    background-color:black;
-    color:white;
-    border-top:3px solid blue;
-    height:100px;
+.footer {
+    background-color: black;
+    color: white;
+    border-top: 3px solid silver;
+    height: 100px;
 }
 
 /* page classes */
 .aboutMe {
     background-color: white;
-    border:3px solid blueviolet;
-    color:black;
-    position:relative;
-    padding:1rem;
-    box-shadow: 2px 2px 0  white;
+    border-width: 3px ;
+    border-style:solid;
+    border-image-source:linear-gradient(110deg, silver, black ) ;
+    border-image-slice: 1;
+    color: black;
+    position: relative;
+    padding: 1rem;
+    box-shadow: 3px 3px 15px silver;
 }
-

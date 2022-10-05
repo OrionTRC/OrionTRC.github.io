@@ -8,3 +8,14 @@ const about=() =>{
         }
     });
 }
+
+const rpg=()=>{
+    $.ajax({
+        url:'pages/rpg.html',
+        method:'get',
+        dataType:'text html',
+        success:function(data){
+            $('#content').html(data);
+        }
+    });
+}
