@@ -15,7 +15,7 @@ const rpg=()=>{
         method:'get',
         dataType:'text html',
         success:function(data){
-            $('#content').html(data);
+            $('#aside').html(data);
         }
     });
 }
