@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+
+    <script src="js/main.js"></script>
+    <script src="js/knockout-3.5.1.js"></script>
+
     <title>Thom's Kasteel</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="js/mainpage.js"></script>
 </head>
 
 <body>
-    <div class="page">
-        <header class="hdr">
-            <img class="hdrImg" src="assets/img/zaptower.png" />
-            <div class="hdrTitel">
-                <h1>Thom's Kasteel</h1>
-            </div>
-            
-            <div class="hdrMenu">
-                <button class="hdrBtn" onclick="rpg();">RPG</button>
-                <button class="hdrBtn">Rambling</button>
-                <button class="hdrBtn" onclick="about();">About</button>               
-            </div>
-        </header>
-        <main class="main">
-            <aside id="sidebar" class="sidebar"></aside>
-            <article id="content">
-            </article>
-        </main>
-        <footer class="footer">
+    <header id="header">
+        <h1> <a href="index.html">Thom's Kasteel</a> </h1>
+        <button type="button" id="menuOpen" tabindex="-1" hidden></button>
+        <nav>
+            <menu>              
+                <li><a href="AcNoir24.html">ACNoir 2024</a></li>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <menu></menu>
+        <section>
+            <h2></h2>
+        </section>
 
-        </footer>
-    </div>
+        <aside></aside>
+    </main>   
 </body>
 
 </html>

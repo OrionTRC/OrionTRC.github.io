@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+
+   
+
+    <title>AmberCon Northen Ireland 2024</title>
+</head>
+
+<body>
+    <div id="bodyCover">
+        <header id="header">
+            <h1> <a href="index.html">Thom's Kasteel</a> </h1>
+            <button type="button" id="menuOpen" tabindex="-1" hidden></button>
+            <nav>
+                <menu data-bind="foreach: games">
+                    <li>
+                        <button type="button">
+                            <span class="game-title" data-bind="text: $data.title"></span><br>
+                            <span data-bind="text: $data.name"></span>
+                        </button>
+                    </li>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <menu>
+
+            </menu>
+            <section>
+                <h2>AmberCon Northen Ireland 2024 Characters</h2>
+            </section>
+
+            <aside></aside>
+        </main>
+    </div>
+
+</body>
+<script src="js/knockout-3.5.1.js"></script>
+<script src="js/acnoir24.js"></script>
+</html>
