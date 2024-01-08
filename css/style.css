@@ -1,5 +1,6 @@
 :root {
     --bg-color: #000;
+    --bg-pic: url("../assets/img/starryai_s29f5.png");
     --fc-color: silver;
 }
 
@@ -23,12 +24,9 @@ body, button, input, table, textarea, select {
 
 /* End reset */
 
-body {
-    background: var(--bg-color) url("../assets/img/starryai_s29f5.png") no-repeat center 25%;
-    background-size: cover;   
-}
-
 #bodyCover {
+    background: var(--bg-color) var(--bg-pic) no-repeat center 25%;
+    background-size: cover;   
     display: flex;
     flex-direction: column;
     height: 100vh;
