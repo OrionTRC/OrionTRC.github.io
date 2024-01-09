@@ -259,6 +259,7 @@ main p {
     background: var(--hero-bg);
     color:var(--hero-fc);
     margin:1rem;
+    padding: 1rem;
 }
 
 .hero h2, .hero h3{
@@ -268,10 +269,10 @@ main p {
 
 .hero h2:not(:empty){
     font-size:clamp(1.5rem,4vh,2rem); 
-    border-bottom: 1px solid var(--hero-fc);     
+    border-bottom: 1px solid var(--hero-fc);         
 }
 
 .hero h3:not(:empty){
     font-size:clamp(1.2rem,3vh,1.5rem);     
-    padding-bottom:1rem;
 }
+   
