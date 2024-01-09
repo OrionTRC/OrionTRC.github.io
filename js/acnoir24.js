@@ -13,12 +13,12 @@ function Acnoir24() {
       , slot:'6-3'
     }
     , {
-      name:'?'
+      name:''
       , title:'A brand new world'
       , slot:'7-2'
     }
     , {
-      name:'?'
+      name:''
       , title:'Excuse me, are we related?'
       , slot:'8-1'
     }
@@ -28,16 +28,22 @@ function Acnoir24() {
       , slot:'9-5'
     }
     , {
-      name:'?'
+      name:''
       , title:'Aurellis (Edwardiana)'
       , slot:'10-3'
     }
     , {
-      name:'?'
+      name:''
       , title:'My first heist'
       , slot:'115'
     }
   ]);
+
+  self.selectedGame = ko.observable({});
+
+  self.selectGame = function(game){
+    self.selectedGame(game);
+  };
 };
 
 ko.applyBindings(new Acnoir24());

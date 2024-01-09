@@ -1,7 +1,11 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
+
 :root {
     --bg-color: #000;
     --bg-pic: url("../assets/img/mainBG.png");
     --fc-color: silver;
+    --hero-bg:#003D3D;
+    --hero-fc:#D1D1D1;
 }
 
 *, *:after, *:before {
@@ -110,11 +114,11 @@ header h1 {
 .game-title{
     text-decoration: underline;
     font-variant:small-caps;
+    font-weight: 600;
 }
 
 main>section {
-    padding: 1rem clamp(1rem, 4vw, 2rem);
-    max-width: 40rem;
+    /* padding: 1rem clamp(1rem, 4vw, 2rem);    */
     margin: 0 auto;
 }
 
@@ -183,12 +187,16 @@ main p {
         top: 0;
     }
 
+    #header>nav li:last-child{
+        margin-right:0.5em;
+    }
+
     #menuOpen+nav li {
         display:grid;
         place-items: center;
         margin: 0 0.5em 0.5em;
         break-inside: avoid;
-    }
+    }    
 
     #header>nav a,
     #header>nav button {
@@ -236,4 +244,27 @@ main p {
         line-height: 1;
         color: var(--fc-color);
     }
+}
+
+
+.hero {    
+    background: var(--hero-bg);
+    color:var(--hero-fc);
+    margin:1rem;
+}
+
+.hero h2, .hero h3{
+    display:grid;
+    place-items: center;
+}
+
+.hero h2:not(:empty){
+    font-size:clamp(1.5rem,4vh,2rem); 
+    border-bottom: 1px solid var(--hero-fc);  
+    margin: 1rem clamp(1rem, 4vw, 2rem);
+}
+
+.hero h3:not(:empty){
+    font-size:clamp(1.2rem,3vh,1.5rem);     
+    padding-bottom:1rem;
 }

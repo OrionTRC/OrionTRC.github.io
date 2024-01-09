@@ -21,7 +21,7 @@
             <nav>
                 <menu data-bind="foreach: games">
                     <li>
-                        <button type="button">
+                        <button type="button" data-bind="click: $parent.selectGame.bind($data)">
                             <span class="game-title" data-bind="text: $data.title"></span><br>
                             <span data-bind="text: $data.name"></span>
                         </button>
@@ -33,8 +33,11 @@
             <menu>
 
             </menu>
-            <section>
-                <h2>AmberCon Northen Ireland 2024 Characters</h2>
+            <section class="hero" data-bind="with: selectedGame">
+                <h2 data-bind="text: $data.title">AmberCon Northen Ireland 2024 Characters</h2>
+                
+                    <h3 data-bind="text: $data.name"></h3>
+                
             </section>
 
             <aside></aside>
