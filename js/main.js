@@ -10,8 +10,6 @@
     opener.nextElementSibling.addEventListener("touchstart",  () => {
       opener.blur();
     } );
-
-    window.history.pushState({},null,'www.Thomskasteel.nl');
 }  
 
 const pipe=(x,...fns)=>fns.reduce((v,f)=>f(v),x);
