@@ -43,6 +43,7 @@ function Acnoir24() {
 
   self.selectGame = function(game){
     self.selectedGame(game);
+    document.getElementsByClassName('hero')?.focus();
   };
 };
 

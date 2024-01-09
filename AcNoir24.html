@@ -29,18 +29,16 @@
                 </menu>
             </nav>
         </header>
-        <main>
-            <menu>
-
-            </menu>
-            <section class="hero" data-bind="with: selectedGame">
+        <main class="hero" data-bind="with: selectedGame">
+            <header>
                 <h2 data-bind="text: $data.title"></h2>
-                
-                    <h3 data-bind="text: $data.name"></h3>
-                
-            </section>
+                <h3 data-bind="text: $data.name"></h3>
+            </header>
 
-            <aside></aside>
+            <section>
+
+            </section>
+           
         </main>
     </div>
 
