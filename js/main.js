@@ -1,5 +1,5 @@
 {
-    const opener = document.getElementById("menuOpen");
+    const opener = document.getElementById('menuOpen');
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") opener.blur();     
     } );
@@ -11,7 +11,7 @@
       opener.blur();
     } );
 
-    window.history.pushState({},null,'Thomskasteel.nl');
+    window.history.pushState({},null,'www.Thomskasteel.nl');
 }  
 
 const pipe=(x,...fns)=>fns.reduce((v,f)=>f(v),x);
