@@ -11,7 +11,7 @@
       opener.blur();
     } );
 
-    history.pushState({},null,'Thomskasteel.nl');
+    window.history.pushState({},null,'Thomskasteel.nl');
 }  
 
 const pipe=(x,...fns)=>fns.reduce((v,f)=>f(v),x);
