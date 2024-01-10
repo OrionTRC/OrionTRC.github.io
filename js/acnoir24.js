@@ -41,9 +41,9 @@ function Acnoir24() {
 
   self.selectedGame = ko.observable({});
 
-  self.selectGame = function(game){
+  self.selectGame = function(game,event){
     self.selectedGame(game);
-    document.getElementsByClassName('hero')?.focus();
+    event.target.closest('button').blur();
   };
 };
 
