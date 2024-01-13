@@ -1,7 +1,6 @@
-{
-  const main=document.querySelector('main');
+{ 
   import('./jen.js').then((mod)=>{
-    mod.loadPageInto(main);
+    mod.load();
   });
 }
 
