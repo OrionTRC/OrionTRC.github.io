@@ -6,6 +6,25 @@ function Acnoir24() {
         name:'The Tall Man'
         , title:'Burning Coal'
         , slot:'5-2'
+        , powers:[
+          {
+            name:'Relentless'
+            , type:'strength'
+            , details:'Will not stop. Ever'
+          }
+          ,{
+            name:'Strong-willed'
+            , type:'strength'
+          }
+          , {
+            name:'Vulnerable to cold'
+            , type:'weakness'
+          }
+          ,{
+            name:'Master of Illusion'
+            , type:'special'
+          }
+        ]
     }
     , {
       name: 'Carloman Randolph'

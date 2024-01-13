@@ -37,7 +37,17 @@
             </header>
 
             <section>
-                <div id="stats" data-bind="with:$data.stats">
+                <div data-bind="with: $data.desc">
+                    <details>
+                        <summary>Description</summary>
+                        <p data-bind="text: $data.blurb"></p>
+                        <img class="char-picture" data-bind="attr: {'src': $data.pic}">
+                    </details>
+                </div>
+            </section>
+
+            <section>
+                <div id="stats" data-bind="with: $data.stats">
                     <details>
                         <summary>Abilities</summary>
                         <table>
@@ -48,7 +58,6 @@
                                     <th>Value</th>
                                 </tr>
                             </thead>
-
                             <tbody data-bind="foreach: $data">
                                 <tr>
                                     <td data-bind="text: stat"></td>
@@ -58,13 +67,12 @@
                             </tbody>
                             <tfoot data-bind="with: $parent.stuff">
                                 <tr>
-                                    <td data-bind="text: type" style="text-align: right;border-right: none;"></td>
+                                    <td data-bind="text: type"></td>
                                     <td>Stuff</td>
-                                    <td data-bind="text: value"></td>>                                                                                                   
+                                    <td data-bind="text: value"></td>
                                     </td>
                                 </tr>
                             </tfoot>
-
                         </table>
                     </details>
                 </div>

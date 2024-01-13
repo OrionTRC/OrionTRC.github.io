@@ -276,6 +276,7 @@ main {
     gap: 1rem;
     overflow: hidden;
     width:100%;
+    margin-bottom:1rem;
 }
 
 .hero header:not(:empty){    
@@ -302,11 +303,10 @@ main {
 
 .hero div{
     max-width:100%;
-}
-
-.hero details{
     background: var(--hero-bg);
     color:var(--hero-fc);
+}
+.hero details{
     padding:1rem; 
     max-width:100%;    
 }     
@@ -337,28 +337,43 @@ main {
     border-bottom:var(--hero-brd)
 }
 
-.hero tr td{
+.hero tbody tr td{
     text-align: center;
     padding: 0.25em 1em;
     border-left: var(--hero-brd);
     border-right: var(--hero-brd);
 }
 
-.hero tr td:first-child{
+.hero tbody tr td:first-child{
     text-align: start;
     border:none;
 }
 
-.hero tr td:last-child{
+.hero tbody tr td:last-child{
     text-align: end;
     border:none;
 }
 
 .hero tfoot tr td:not(:empty){
-    border: var(--hero-brd);
+    border-left:var(--hero-brd);
+    border-bottom: var(--hero-brd);
 }
 .hero tfoot tr td:not(:empty) + td:not(:empty){
     border-left: none;
+}
+
+.hero tfoot tr td:first-child{
+    text-align:end;
+}
+.hero tfoot tr td:last-child{
+    text-align:start;
+    border-left:none;
+    border-right:var(--hero-brd);
+}
+
+.char-picture{
+   width:100%;
+   aspect-ratio: auto;
 }
 
 /* id specific */
