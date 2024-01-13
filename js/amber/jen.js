@@ -2,7 +2,12 @@ function jen() {
     return {
         name: 'Jennifer Rennes'
         , title: 'Long Live the Queen'
+        , details:[
+            {label:'full name',value:'Princess Basilissa Regina Barimen of Benedict'}
+        ]
+        , download:'./assets/files/jen.docx'
         , slot: '9-5'
+        , gm:'Scott'
         , stats: [
             { stat: 'Psyche', value: 20, rank:'Amber' }
             , { stat: 'Strength', value: 0, rank:'Amber'  }

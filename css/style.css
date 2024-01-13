@@ -124,6 +124,7 @@ header h1 {
 
 main {  
     margin: 0 auto;
+    position: relative;
 }
 
 @media (max-width:48rem) {
@@ -374,6 +375,16 @@ main {
 .char-picture{
    width:100%;
    aspect-ratio: auto;
+}
+
+.download{
+    position:absolute;
+    top:1rem;
+    right:1rem;
+}
+.download:after{
+    color:var(--hero-fc);
+    content:"\2709";
 }
 
 /* id specific */

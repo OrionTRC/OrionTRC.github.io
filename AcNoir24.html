@@ -44,6 +44,18 @@
                         <img class="char-picture" data-bind="attr: {'src': $data.pic}">
                     </details>
                 </div>
+           
+                <div data-bind="with: $data.details">
+                    <details>
+                        <summary>Details</summary>
+                        <p data-bind="foreach: $data">
+                            <span>
+                                <span class="desc" data-bind="text: $data.label"></span>
+                                <span data-bind="text: $data.value"></span><br>
+                            </span>
+                        </p>   
+                    </details>
+                </div>
             </section>
 
             <section>
@@ -123,7 +135,9 @@
                     </details>
                 </div>
             </section>
-
+            <!-- ko if: $data.download-->
+            <a class="download" data-bind="attr:{href: $data.download}" download target="_blank"></a>
+            <!-- /ko -->
         </main>
     </div>
 
