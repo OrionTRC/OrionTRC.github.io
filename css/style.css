@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
 
+/* start*/
 :root {
     --bg-color: #000;
     --bg-pic: url("../assets/img/mainBG.png");
@@ -27,8 +28,7 @@ body, button, input, table, textarea, select {
     font: normal 1em/1.5 "poppins", arial, helvetica, sans-serif;
 }
 
-/* End reset */
-
+/* basic styling */
 #bodyCover {
     background: var(--bg-color) var(--bg-pic) no-repeat center 25%;
     background-size: cover;   
@@ -72,13 +72,10 @@ header h1 {
 
 #header>nav li {
     list-style: none;
-    /* display: inline-block; */
-    /* margin-left: 1rem; */
     display:flex;
     flex-direction: column;
     justify-content: stretch;
 }
-
 
 #header a {
     display: inline-block;
@@ -86,6 +83,7 @@ header h1 {
     color: var(--fc-color); 
     transition: transform 0.3s, color 0.3s;
 }
+
 #header>nav a {
     border:1px solid var(--fc-color);
     border-radius: 0.25em;
@@ -109,7 +107,6 @@ header h1 {
     transition: transform 0.3s, color 0.3s, background-color 0.3s;
 }
 
-
 #header>nav button:focus,
 #header>nav button:hover {
     background-color: var(--fc-color);
@@ -127,10 +124,6 @@ header h1 {
 
 main {  
     margin: 0 auto;
-}
-
-main p {
-    margin: 1em 0;
 }
 
 @media (max-width:48rem) {
@@ -253,14 +246,36 @@ main p {
     }
 }
 
+
+/* class definitions */
 .hero{
     width: clamp(20rem,75vw,80rem);  
+}
+
+.hero-reverse{
+    background: var(--hero-fc);
+    color:var(--hero-bg);    
+}
+
+.desc{
+    display: inline-block;
+    min-width: 4em;    
+    margin-right:1em;
+    text-decoration: underline;
+}
+
+.hero-reverse + p{
+    margin: 0 0 1rem 0;
+    border-top:var(--hero-brd);
+    overflow-wrap: break-word;
 }
 
 .hero section{
     display:flex;
     flex-wrap: wrap;
     gap: 1rem;
+    overflow: hidden;
+    width:100%;
 }
 
 .hero header:not(:empty){    
@@ -285,12 +300,20 @@ main p {
     margin:0 1rem 1rem;    
 }  
 
-.hero div:has(table){
+.hero div{
+    max-width:100%;
+}
+
+.hero details{
     background: var(--hero-bg);
     color:var(--hero-fc);
-    padding:1rem;
-    flex-grow:1;  
+    padding:1rem; 
+    max-width:100%;    
 }     
+
+.hero summary{
+    font-size:clamp(1.2rem,3vh,1.5rem);   
+}
 
 .hero table{
     width:100%;
@@ -301,18 +324,15 @@ main p {
     color:var(--hero-bg);
     border:var(--hero-brd);
 }
+
 .hero th{
     text-align: center;
-}
-
-#stats th{
-    min-width:5rem;
-    width:33%;
 }
 
 .hero tbody{
     border: var(--hero-brd);
 }
+
 .hero tbody tr{
     border-bottom:var(--hero-brd)
 }
@@ -320,13 +340,29 @@ main p {
 .hero tr td{
     text-align: center;
     padding: 0.25em 1em;
-}
-.hero tr td:first-child{
-    text-align: start;
-}
-.hero tr td:last-child{
-    text-align: end;
+    border-left: var(--hero-brd);
+    border-right: var(--hero-brd);
 }
 
-   
-   
+.hero tr td:first-child{
+    text-align: start;
+    border:none;
+}
+
+.hero tr td:last-child{
+    text-align: end;
+    border:none;
+}
+
+.hero tfoot tr td:not(:empty){
+    border: var(--hero-brd);
+}
+.hero tfoot tr td:not(:empty) + td:not(:empty){
+    border-left: none;
+}
+
+/* id specific */
+#stats th{
+    min-width:5rem;
+    width:33%;
+}   

@@ -22,21 +22,21 @@ function jen() {
             {
                 name: 'Studded glove'
                 , cost: 6
-                , qualities: 'deadly damage,alternate shapes'
+                , qualities: ['deadly damage','alternate shapes']
                 , quantity: 1
                 , description: 'Glove, Gauntlet, Cestus, Dagger, Rapier, Claymore, Scissors, Pliers, Bolt cutter,  Crowbar, Baseball bat, Necklace'
             }
             , {
                 name: 'Suitable armor'
                 , cost: 10
-                , qualities: 'Impervious,Limited Shape Shift,Danger Sense'
+                , qualities: ['Impervious to Conventional Weapons','Limited Shape Shift','Danger Sense']
                 , quantity: 1
                 , description: 'This item takes any shape or form its wearer psychically calls for. It shifts into battle armor form automatically when it senses danger.'
             }
             , {
                 name: 'Deck of tricks'
                 , cost: 3
-                , qualities: 'Mold shadow stuff'
+                , qualities: ['Mold shadow stuff']
                 , quantity: 52
                 , description: 'Whisper the desired effect and deal the card.'
             }

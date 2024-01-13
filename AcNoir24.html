@@ -38,55 +38,82 @@
 
             <section>
                 <div id="stats" data-bind="with:$data.stats">
-                    <table>
-                        <caption>
-                            <h3>Abilities</h3>
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th>Ability</th>
-                                <th>Rank</th>
-                                <th>Value</th>
-                            </tr>
-                        </thead>
+                    <details>
+                        <summary>Abilities</summary>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ability</th>
+                                    <th>Rank</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
 
-                        <tbody data-bind="foreach: $data">
-                            <tr>
-                                <td data-bind="text: stat"></td>
-                                <td data-bind="text: rank"></td>
-                                <td data-bind="text: value"></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <tbody data-bind="foreach: $data">
+                                <tr>
+                                    <td data-bind="text: stat"></td>
+                                    <td data-bind="text: rank"></td>
+                                    <td data-bind="text: value"></td>
+                                </tr>
+                            </tbody>
+                            <tfoot data-bind="with: $parent.stuff">
+                                <tr>
+                                    <td data-bind="text: type" style="text-align: right;border-right: none;"></td>
+                                    <td>Stuff</td>
+                                    <td data-bind="text: value"></td>>                                                                                                   
+                                    </td>
+                                </tr>
+                            </tfoot>
+
+                        </table>
+                    </details>
                 </div>
                 <div id="powers" data-bind="with: $data.powers">
-                    <table>
-                        <caption>
-                            <h3>Abilities</h3>
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th>Ability</th>
-                                <th>Rank</th>
-                                <th>Value</th>
-                            </tr>
-                        </thead>
-
-                        <tbody data-bind="foreach: $data">
-                            <tr>
-                                <td data-bind="text: stat"></td>
-                                <td data-bind="text: rank"></td>
-                                <td data-bind="text: value"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </ul>
-                <ul id="items" data-bind="foreach: $data.items">
-                    <li>
-                        <span data-bind="text: stat"></span>
-                        <span data-bind="text: value"></span>
-                    </li>
-                </ul>
+                    <details>
+                        <summary>Powers</summary>
+                        <ul data-bind="foreach: $data">
+                            <li>
+                                <span data-bind="text: name" class="hero-reverse"></span>
+                                <p>
+                                    <!-- ko with: $data.type-->
+                                    <span class="desc">Type</span><span data-bind="text: $data"></span><br>
+                                    <!-- /ko -->
+                                    <!-- ko with: $data.cost-->
+                                    <span class="desc">cost</span><span data-bind="text: $data"></span><br>
+                                    <!-- /ko -->
+                                    <!-- ko with: $data.details-->
+                                    <span class="desc">details</span><span data-bind="text: $data"></span>
+                                    <!-- /ko -->
+                                </p>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <div id="items" data-bind="with: $data.items">
+                    <details>
+                        <summary>Artefacts</summary>
+                        <ul data-bind="foreach: $data">
+                            <li>
+                                <span data-bind="text: name" class="hero-reverse"></span>
+                                <p>
+                                    <!-- ko with: $data.description -->
+                                    <span class="desc">Description</span><span data-bind="text: $data"></span><br>
+                                    <!-- /ko -->
+                                    <!-- ko with: $data.cost-->
+                                    <span class="desc">Cost</span><span data-bind="text: $data"></span><br>
+                                    <!-- /ko -->
+                                    <!-- ko with: $data.quantity-->
+                                    <span class="desc">Quantity</span><span data-bind="text: $data"></span>
+                                    <!-- /ko -->
+                                </p>
+                                <span class="desc">Qualities</span>
+                                <ul data-bind="foreach: qualities">
+                                    <li data-bind="text:$data"></li>
+                                </ul><br>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
             </section>
 
         </main>
