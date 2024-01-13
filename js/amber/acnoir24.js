@@ -1,7 +1,5 @@
 { 
-  import('./jen.js').then((mod)=>{
-    mod.load();
-  });
+  await import('./jen.js');
 }
 
 function Acnoir24() {
