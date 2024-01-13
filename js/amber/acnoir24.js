@@ -43,10 +43,4 @@ function Acnoir24() {
   };
 };
 
-function init(){
-  import('./jen.js').then(()=>{
-    ko.applyBindings(new Acnoir24());
-  }); 
-};
-
-init();
+ko.applyBindings(new Acnoir24());

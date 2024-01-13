@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
 
-    <!-- <script src="js/amber/jen.js"></script> -->
+    <script src="js/amber/jen.js"></script>
     <script src="js/amber/powers.js"></script>
 
     <title>AmberCon Northen Ireland 2024</title>
@@ -59,11 +59,27 @@
                         </tbody>
                     </table>
                 </div>
-                <ul id="powers" data-bind="foreach: $data.powers">
-                    <li>
-                        <span data-bind="text: stat"></span>
-                        <span data-bind="text: value"></span>
-                    </li>
+                <div id="powers" data-bind="with: $data.powers">
+                    <table>
+                        <caption>
+                            <h3>Abilities</h3>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Ability</th>
+                                <th>Rank</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+
+                        <tbody data-bind="foreach: $data">
+                            <tr>
+                                <td data-bind="text: stat"></td>
+                                <td data-bind="text: rank"></td>
+                                <td data-bind="text: value"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </ul>
                 <ul id="items" data-bind="foreach: $data.items">
                     <li>
