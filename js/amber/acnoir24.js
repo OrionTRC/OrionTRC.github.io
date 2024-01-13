@@ -1,6 +1,4 @@
-{ 
-  await import('./jen.js');
-}
+import('./jen.js');
 
 function Acnoir24() {
   var self = this;
