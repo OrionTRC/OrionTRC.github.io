@@ -6,6 +6,7 @@
     --fc-color: silver;
     --hero-bg:#003D3D;
     --hero-fc:#D1D1D1;
+    --hero-brd:1px solid var(--hero-fc);
 }
 
 *, *:after, *:before {
@@ -253,13 +254,18 @@ main p {
 }
 
 .hero{
-    width: clamp(20rem,75vw,80rem);
+    width: clamp(20rem,75vw,80rem);  
+}
+
+.hero section{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .hero header:not(:empty){    
     background: var(--hero-bg);
-    color:var(--hero-fc);
-    margin:1rem;  
+    color:var(--hero-fc);  
 }
 
 .hero h2, .hero h3{
@@ -270,7 +276,7 @@ main p {
 
 .hero h2:not(:empty){
     font-size:clamp(1.5rem,4vh,2rem); 
-    border-bottom: 1px solid var(--hero-fc);     
+    border-bottom:var(--hero-brd);
     margin:1rem 1rem 0.5rem; 
 }
 
@@ -279,4 +285,48 @@ main p {
     margin:0 1rem 1rem;    
 }  
 
+.hero div:has(table){
+    background: var(--hero-bg);
+    color:var(--hero-fc);
+    padding:1rem;
+    flex-grow:1;  
+}     
+
+.hero table{
+    width:100%;
+}
+
+.hero table thead{
+    background: var(--hero-fc);
+    color:var(--hero-bg);
+    border:var(--hero-brd);
+}
+.hero th{
+    text-align: center;
+}
+
+#stats th{
+    min-width:5rem;
+    width:33%;
+}
+
+.hero tbody{
+    border: var(--hero-brd);
+}
+.hero tbody tr{
+    border-bottom:var(--hero-brd)
+}
+
+.hero tr td{
+    text-align: center;
+    padding: 0.25em 1em;
+}
+.hero tr td:first-child{
+    text-align: start;
+}
+.hero tr td:last-child{
+    text-align: end;
+}
+
+   
    

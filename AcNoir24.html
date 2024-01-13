@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/reset.css" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
 
-   
+    <!-- <script src="js/amber/jen.js"></script> -->
+    <script src="js/amber/powers.js"></script>
 
     <title>AmberCon Northen Ireland 2024</title>
 </head>
@@ -36,13 +37,47 @@
             </header>
 
             <section>
+                <div id="stats" data-bind="with:$data.stats">
+                    <table>
+                        <caption>
+                            <h3>Abilities</h3>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Ability</th>
+                                <th>Rank</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
 
+                        <tbody data-bind="foreach: $data">
+                            <tr>
+                                <td data-bind="text: stat"></td>
+                                <td data-bind="text: rank"></td>
+                                <td data-bind="text: value"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul id="powers" data-bind="foreach: $data.powers">
+                    <li>
+                        <span data-bind="text: stat"></span>
+                        <span data-bind="text: value"></span>
+                    </li>
+                </ul>
+                <ul id="items" data-bind="foreach: $data.items">
+                    <li>
+                        <span data-bind="text: stat"></span>
+                        <span data-bind="text: value"></span>
+                    </li>
+                </ul>
             </section>
-           
+
         </main>
     </div>
 
 </body>
 <script src="js/knockout-3.5.1.js"></script>
-<script src="js/acnoir24.js"></script>
+<script src="js/amber/acnoir24.js"></script>
+
 </html>
