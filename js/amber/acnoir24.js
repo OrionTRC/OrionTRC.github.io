@@ -1,5 +1,3 @@
-import('./jen.js');
-
 function Acnoir24() {
   var self = this;
 
@@ -45,4 +43,10 @@ function Acnoir24() {
   };
 };
 
-ko.applyBindings(new Acnoir24());
+function init(){
+  import('./jen.js').then(()=>{
+    ko.applyBindings(new Acnoir24());
+  }); 
+};
+
+init();
