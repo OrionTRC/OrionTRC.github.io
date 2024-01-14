@@ -124,7 +124,6 @@ header h1 {
 
 main {  
     margin: 0 auto;
-    position: relative;
 }
 
 @media (max-width:48rem) {
@@ -302,7 +301,7 @@ main {
     margin:0 1rem 1rem;    
 }  
 
-.hero div{
+.hero div:has(details){
     max-width:100%;
     background: var(--hero-bg);
     color:var(--hero-fc);
@@ -378,13 +377,14 @@ main {
 }
 
 .download{
-    position:absolute;
-    top:1rem;
-    right:1rem;
+    position:fixed;
+    bottom:1.5rem;
+    right:1.5rem;
 }
 .download:after{
     color:var(--hero-fc);
     content:"\2709";
+    font-size:clamp(1.2rem,3vh,1.5rem);   
 }
 
 /* id specific */

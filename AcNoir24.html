@@ -37,15 +37,18 @@
             </header>
 
             <section>
-                <div data-bind="with: $data.desc">
+                <!-- ko with: $data.desc -->
+                <div>
                     <details>
                         <summary>Description</summary>
                         <p data-bind="text: $data.blurb"></p>
                         <img class="char-picture" data-bind="attr: {'src': $data.pic}">
                     </details>
                 </div>
-           
-                <div data-bind="with: $data.details">
+                <!-- /ko -->
+
+                <!-- ko with: $data.details -->
+                <div>
                     <details>
                         <summary>Details</summary>
                         <p data-bind="foreach: $data">
@@ -56,10 +59,12 @@
                         </p>   
                     </details>
                 </div>
+                <!-- /ko -->
             </section>
 
             <section>
-                <div id="stats" data-bind="with: $data.stats">
+                <!-- ko with: $data.stats -->
+                <div id="stats">
                     <details>
                         <summary>Abilities</summary>
                         <table>
@@ -88,7 +93,10 @@
                         </table>
                     </details>
                 </div>
-                <div id="powers" data-bind="with: $data.powers">
+                <!-- /ko -->
+
+                <!-- ko with: $data.powers -->
+                <div id="powers">
                     <details>
                         <summary>Powers</summary>
                         <ul data-bind="foreach: $data">
@@ -109,7 +117,10 @@
                         </ul>
                     </details>
                 </div>
-                <div id="items" data-bind="with: $data.items">
+                <!-- /ko -->
+
+                <!-- ko with: $data.items -->
+                <div id="items">
                     <details>
                         <summary>Artefacts</summary>
                         <ul data-bind="foreach: $data">
@@ -134,6 +145,7 @@
                         </ul>
                     </details>
                 </div>
+                <!-- /ko -->
             </section>
             <!-- ko if: $data.download-->
             <a class="download" data-bind="attr:{href: $data.download}" download target="_blank"></a>
