@@ -36,11 +36,7 @@ function Acnoir24() {
       , title:'A brand new world'
       , slot:'7-2'
     }
-    , {
-      name:''
-      , title:'Excuse me, are we related?'
-      , slot:'8-1'
-    }
+    , reno()
     , jen()
     , {
       name:''
