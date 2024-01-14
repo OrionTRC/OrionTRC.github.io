@@ -26,11 +26,7 @@ function Acnoir24() {
           }
         ]
     }
-    , {
-      name: 'Carloman Randolph'
-      , title: 'Who killed Julian'
-      , slot:'6-3'
-    }
+    , carl()
     , {
       name:''
       , title:'A brand new world'

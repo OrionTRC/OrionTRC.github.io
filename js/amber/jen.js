@@ -15,9 +15,9 @@ function jen() {
             , { stat: 'Warfare', value: 35, rank:'Amber'  }
         ]
         , powers: [
-            Object.assign(pattern, { cost: 0, details: 'free from character creation' })
+            Object.assign({},pattern, { cost: 0, details: 'free from character creation' })
             , conjuration
-            , Object.assign(powerWords, {
+            , Object.assign({},powerWords, {
                 type: 'Schang, Krolak, Askiir, Jask, Marsk'
                 , details: 'True Form, Neural Disrupt, Psyche Disrupt, Trump Disrupt, Weaken Structure'
             })
@@ -49,7 +49,8 @@ function jen() {
         , stuff: { type: 'Good', value: 1 }
         , desc:{
             blurb:`Born to the name of Basilissa (and hating it, obviously), the youngest daughter of Benedict certainly isn’t the son he never had. Jenny isn’t regal, she’s not traditional, she certainly won’t apply herself to the tasks women are usually confined to (to her father’s annoyance), she’s not a really big fan of monarchy, and the only reason she even likes Random is because he’s actually quite fun to hang around with, when he’s not kinging around.  Having been taught Conjuration by Uncle Bleys and Power Words by Uncle Gerard, she makes it a point to get into as much trouble as she can whenever she’s around Amber. Anything to get a rise out of Dad, stoic bugger that he is.`
-            , pic:'./assets/img/jen.png'
+            , pic:'./assets/img/jen3.png'
+            , summary: 'Description'
         }
     };
 };

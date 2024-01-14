@@ -374,17 +374,18 @@ main {
 .char-picture{
    width:100%;
    aspect-ratio: auto;
+   margin-top: 1rem;
 }
 
 .download{
     position:fixed;
-    bottom:1.5rem;
-    right:1.5rem;
+    bottom:1rem;
+    right:2rem;
 }
 .download:after{
     color:var(--hero-fc);
     content:"\2709";
-    font-size:clamp(1.2rem,3vh,1.5rem);   
+    font-size:clamp(1.5rem,5vh,2rem);   
 }
 
 /* id specific */

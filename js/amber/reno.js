@@ -29,6 +29,7 @@ function reno() {
         , desc:{
             blurb:`Renegade “Reno” Turner is a son of Florimel. Ironically named, Flora had him trained to be dashing, devious, strong and ruthless. Knowing full well that she needed people to be enforcers at times, she utilizes him to scout out situations and ‘ deal’ with anything unsavory, which in turn keeps her hands clean. And if things go south, well, she’ll claim she had “nothing to do with whatever that silly boy is up to… it’s in the name, isn’t it?” \nSuffice to say Reno doesn’t like his mother very much. He’s acutely aware of the power she holds over him, though, so he dare not oppose her … yet.`
             , pic:'./assets/img/reno.png'
+            , summary: 'Description'
         }
     };
 };

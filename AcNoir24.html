@@ -10,6 +10,7 @@
 
     <script src="js/amber/jen.js"></script>
     <script src="js/amber/reno.js"></script>
+    <script src="js/amber/carl.js"></script>
     <script src="js/amber/powers.js"></script>
 
     <title>AmberCon Northen Ireland 2024</title>
@@ -41,7 +42,7 @@
                 <!-- ko with: $data.desc -->
                 <div>
                     <details>
-                        <summary>Description</summary>
+                        <summary data-bind="text: summary"></summary>
                         <p data-bind="text: $data.blurb"></p>
                         <img class="char-picture" data-bind="attr: {'src': $data.pic}">
                     </details>
@@ -60,7 +61,7 @@
                         </p>   
                     </details>
                 </div>
-                <!-- /ko -->
+                <!-- /ko -->               
             </section>
 
             <section>
