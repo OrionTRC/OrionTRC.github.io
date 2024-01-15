@@ -3,7 +3,16 @@ function carl() {
         name: 'Carloman Randolph'
         , title: 'Who killed Julian'
         , details:[
-            {label:'Position',value:'Stable hand'}
+            {label:'Occupation',value:'Stable hand'}
+            , {label:'Means',value:'Morgenstern, a cesspit and a wheelbarrow'}
+            , {label:'Motive', value:'The death of a friend, and Julian used him to train Morgenstern to hate Corwin'}
+            , {label:'Traits:',value:''}
+            ,{label:"\u2727",value:'Passing resemblance to Corwin'}
+            ,{label:"\u2727",value:'Affinity for animals, horses in particular'}
+            ,{label:"\u2727",value:'Holds grudges'}
+            ,{label:"\u2727",value:'Proud'}
+            ,{label:"\u2727",value:'Powerful physique'}
+            ,{label:"\u2727",value:'Better with animals than with people'}
         ]
         , download:'./assets/files/carl.docx'
         , slot:'6-3'
@@ -35,6 +44,7 @@ function carl() {
             It’d never happen, I know. Who am I to raise a hand to a Prince? I’m just a lowly stable hand. It’s not my place. It’s nice to dream, though.
             It’s nice to dream.”`            
             , summary: 'Story'
+            , pic:'./assets/img/carl.png'
         }
     };
 };
