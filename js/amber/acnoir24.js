@@ -2,30 +2,7 @@ function Acnoir24() {
   var self = this;
 
   self.games = ko.observableArray([
-    {
-        name:'The Tall Man'
-        , title:'Burning Coal'
-        , slot:'5-2'
-        , powers:[
-          {
-            name:'Relentless'
-            , type:'strength'
-            , details:'Will not stop. Ever'
-          }
-          ,{
-            name:'Strong-willed'
-            , type:'strength'
-          }
-          , {
-            name:'Vulnerable to cold'
-            , type:'weakness'
-          }
-          ,{
-            name:'Master of Illusion'
-            , type:'special'
-          }
-        ]
-    }
+    tallman()
     , carl()
     , {
       name:''
