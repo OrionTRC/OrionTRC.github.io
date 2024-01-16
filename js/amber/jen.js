@@ -1,4 +1,4 @@
-function jen() {
+export function jen() {
     return {
         name: 'Jennifer Rennes'
         , title: 'Long Live the Queen'

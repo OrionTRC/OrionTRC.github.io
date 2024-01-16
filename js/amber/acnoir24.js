@@ -1,25 +1,30 @@
+import {jen} from './jen.js';
+import {carl} from './carl.js';
+import {tallman} from './tallman.js';
+import {reno} from './reno.js';
+
 function Acnoir24() {
   var self = this;
 
   self.games = ko.observableArray([
-    tallman()
-    , carl()
+    tallman?.()
+    , carl?.()
     , {
       name:''
       , title:'A brand new world'
       , slot:'7-2'
     }
-    , reno()
-    , jen()
+    , reno?.()
+    , jen?.()
     , {
       name:''
       , title:'Aurellis (Edwardiana)'
       , slot:'10-3'
     }
     , {
-      name:''
+      name:'Zach Whitfield'
       , title:'My first heist'
-      , slot:'115'
+      , slot:'11-5'
     }
   ]);
 

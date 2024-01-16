@@ -1,4 +1,4 @@
-function carl() {
+export function carl() {
     return {
         name: 'Carloman Randolph'
         , title: 'Who killed Julian'
