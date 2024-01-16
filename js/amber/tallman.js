@@ -1,4 +1,4 @@
-function tallman() {
+export function tallman() {
     return {
         name:'The Tall Man'
         , title:'Burning Coal'

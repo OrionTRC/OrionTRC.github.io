@@ -1,4 +1,4 @@
-function reno() {
+export function reno() {
     return {
         name: 'Renegade Turner'
         , title:'Excuse me, are we related?'
