@@ -18,19 +18,16 @@
             <button type="button" id="menuOpen" tabindex="-1" hidden></button>
         </header>
         <main>
-            <menu>
-
+            <menu data-bind="foreach: photoArray">
+                <li>
+                    <a data-bind="attr:{href: $data.photo}">
+                        <span data-bind="text: $data.title"></span>
+                    </a>
+                </li>
             </menu>
             <section>
                 <h2></h2>
-                <menu data-bind="foreach: photoArray">                   
-                    <li>
-                        <a data-bind="attr:{href: $data.photo}">
-                            <span data-bind="text: $data.title"></span>
-                        </a>
-                    </li> 
-                   
-                </menu>
+              
             </section>
 
             <aside></aside>
