@@ -12,21 +12,25 @@
 </head>
 
 <body>
-    <div id="bodyCover" style="--bg-pic:url('assets\photos\16.jpg');">
+    <div id="bodyCover" style="--bg-pic:url('assets/photos/16.jpg');">
         <header id="header">
             <h1> <a href="index.html">Thom's Kasteel</a> </h1>
-            <button type="button" id="menuOpen" tabindex="-1" hidden></button>           
+            <button type="button" id="menuOpen" tabindex="-1" hidden></button>
         </header>
         <main>
-            <menu data-bind="with: photoArray">
-                <li>
-                    <a data-bind="attr:{href: $data.photo}">
-                    <span data-bind="text: $data.title"></span>
-                </a>
-            </li>
+            <menu>
+
             </menu>
             <section>
                 <h2></h2>
+                <menu data-bind="foreach: photoArray">                   
+                    <li>
+                        <a data-bind="attr:{href: $data.photo}">
+                            <span data-bind="text: $data.title"></span>
+                        </a>
+                    </li> 
+                   
+                </menu>
             </section>
 
             <aside></aside>
@@ -35,7 +39,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/knockout-3.5.1.js"></script>
-    <script scr="js/fotoscript.js"></script>
+    <script src="js/fotoscript.js"></script>
 </body>
 
 </html>
