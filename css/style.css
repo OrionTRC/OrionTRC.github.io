@@ -39,6 +39,16 @@ body, button, input, table, textarea, select {
     overflow: auto;
 }
 
+#bodyCover2 {
+    background: var(--bg-color) var(--bg-pic) no-repeat center top;
+    background-size: cover;   
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    overflow: auto;
+}
+
 .backToTop {
     float: right;
     margin-left: 1.5em;
@@ -123,7 +133,7 @@ header h1 {
 }
 
 main {  
-    margin: 0 auto;
+    margin: 0 auto;       
 }
 
 @media (max-width:48rem) {
@@ -245,7 +255,6 @@ main {
         color: var(--fc-color);
     }
 }
-
 
 /* class definitions */
 .hero{
@@ -374,7 +383,7 @@ main {
 .char-picture{
    width:100%;
    aspect-ratio: auto;
-   margin-top: 1rem;
+   margin-bottom: 1rem;
 }
 
 .download{

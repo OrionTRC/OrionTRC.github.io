@@ -7,27 +7,34 @@
 
     <link rel="stylesheet" href="css/reset.css" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/fotos.css" media="screen">
 
     <title>Thom's Kasteel - Foto's van Papa en Mama</title>
 </head>
 
 <body>
-    <div id="bodyCover" style="--bg-pic:url('../assets/photos/16.jpg');">
+    <div id="bodyCover2" style="--bg-pic:url('../assets/photos/16.jpg');">
         <header id="header">
             <h1> <a href="index.html">Thom's Kasteel</a> </h1>
             <button type="button" id="menuOpen" tabindex="-1" hidden></button>
         </header>
-        <main>
-            <menu data-bind="foreach: photoArray">
+        <main class="grail">
+            <menu data-bind="foreach: zipArray">
                 <li>
-                    <a data-bind="attr:{href: $data.photo}">
+                    <a data-bind="attr:{href: $data.photo}" target="_blank" download>
                         <span data-bind="text: $data.title"></span>
                     </a>
                 </li>
             </menu>
             <section>
-                <h2></h2>
-              
+                <h2>Foto's papa en mama</h2>
+                <ul class="image-grid" data-bind="foreach: photoArray">
+                    <li>
+                        <a data-bind="attr:{href: $data.link}" target="_blank" download>
+                            <img data-bind="attr: {'src':$data.source}" />
+                        </a>
+                    </li>
+                </ul>
             </section>
 
             <aside></aside>
