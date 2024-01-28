@@ -6,19 +6,11 @@ function fotomodel(){
         self.zipArray.push({photo:`assets/zip/Huwelijkskaarten${i}.zip`,title:`Huwelijkskaarten ${i}`});
     }
 
-    self.photoArray=ko.observableArray();
-    
+    self.photoArray=ko.observableArray();    
    
-    fetch('../assets/photos/').then((response)=>{
-        let list=response.split('\n');
-        for(let entry,info,i=0;entry=list[i];i++){
-            info=entry.split(' ');
-            info[0]=='201' && photoArray.push({
-                link:`../assets/photos/${info[1]}`
-                , source: `../assets/photos${info[1]}`
-            });
-        }
-    });   
+    for(let i=1;i<46;i++){
+        self.photoArray.push(`assets/photos/${i}.jpg`);
+    }
 };
 
 ko.applyBindings(new fotomodel());
