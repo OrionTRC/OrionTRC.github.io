@@ -18,13 +18,7 @@ function fotomodel(){
                 , source: `../assets/photos${info[1]}`
             });
         }
-    });
-    for(let i=0,photo;photo=photos[i];i++){
-        self.photoArray.push({
-            link:`../assets/photos/${photo}`
-            , source: require(`../assets/photos${photo}`)
-        });
-    }
+    });   
 };
 
 ko.applyBindings(new fotomodel());
