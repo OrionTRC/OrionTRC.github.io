@@ -8,8 +8,17 @@ function fotomodel(){
 
     self.photoArray=ko.observableArray();
     
-    let fs = require('fs');
-    let photos= fs.readdirSync('../assets/photos/');
+   
+    fetch('../assets/photos/').then((response)=>{
+        let list=ret.split('\n');
+        for(let entry,info,i=0;entry=list[i];i++){
+            info=entry.split(' ');
+            info[0]=='201' && photoArray.push({
+                link:`../assets/photos/${info[1]}`
+                , source: `../assets/photos${info[1]}`
+            });
+        }
+    });
     for(let i=0,photo;photo=photos[i];i++){
         self.photoArray.push({
             link:`../assets/photos/${photo}`
