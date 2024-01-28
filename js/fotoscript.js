@@ -3,7 +3,7 @@ function fotomodel(){
 
     self.zipArray=ko.observableArray();
     for(let i=1;i<11;i++){
-        self.photoArray.push({photo:`assets/zip/Huwelijkskaarten${i}.zip`,title:`Huwelijkskaarten ${i}`});
+        self.zipArray.push({photo:`assets/zip/Huwelijkskaarten${i}.zip`,title:`Huwelijkskaarten ${i}`});
     }
 
     self.photoArray=ko.observableArray();
