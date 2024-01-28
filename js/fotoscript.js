@@ -10,7 +10,7 @@ function fotomodel(){
     
    
     fetch('../assets/photos/').then((response)=>{
-        let list=ret.split('\n');
+        let list=response.split('\n');
         for(let entry,info,i=0;entry=list[i];i++){
             info=entry.split(' ');
             info[0]=='201' && photoArray.push({
