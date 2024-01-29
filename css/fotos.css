@@ -26,18 +26,33 @@ main.grail{
 }
 
 .grail .image-grid{
-    display:grid;
-    grid-auto-columns: repeat(auto-fit,minmax(20rem,1fr));
-    grid-auto-flow: row dense;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
     gap:0.5rem;
 }
 
-.grail .image-grid li{
-    background-color: #FFF;
-    padding:1rem;
-    border:1px solid var(--grail-fc);    
+.grail .image-grid li{   
+    border:1px solid var(--grail-fc); 
+    margin:0.5rem; 
+    flex-grow: 0;
+    background-color: #FFF; 
+    list-style: none;
 }
 
-.grail .image-grid img{
-    aspect-ratio: auto;
+.grail .image-grid a{  
+    display:block;   
+    background:#FFF no-repeat center;;
+    background-size: contain;   
+    height:clamp(10rem,25dh,25rem);
+    height:clamp(10rem,25dvh,25rem);
+    margin:0.25rem;
+    aspect-ratio: 1;
 }
+
+/* .grail .image-grid img{
+    aspect-ratio: auto;
+    max-height:25vh;
+    max-height: 25dvh;
+} */
