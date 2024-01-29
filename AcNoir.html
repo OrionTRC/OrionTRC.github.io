@@ -7,11 +7,11 @@
 
     <link rel="stylesheet" href="css/reset.css" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
-    <link rel="stylesheet" href="css/acnoir.css" media="screen">
 
+    <script src="js/amber/acn24LOCAL.js"></script>
     <script src="js/amber/powers.js"></script> 
 
-    <title>Thom's Kasteel - AmberCon Northen Ireland 2024</title>
+    <title>Thom's kasteel - AmberCon Northen Ireland 2024</title>
 </head>
 
 <body>
@@ -41,8 +41,8 @@
                 <div>
                     <details>
                         <summary data-bind="text: summary"></summary>
-                        <img class="char-picture" data-bind="attr: {'src': $data.pic}">
                         <p data-bind="text: $data.blurb"></p>
+                        <img class="char-picture" data-bind="attr: {'src': $data.pic}">
                     </details>
                 </div>
                 <!-- /ko -->
@@ -155,6 +155,7 @@
 
 </body>
 <script src="js/knockout-3.5.1.js"></script>
-<script type="module" src="js/amber/acnoir24.js"></script>
+<!-- <script type="module" src="js/amber/acnoir24.js"></script> -->
+<script src="js/amber/acnoir.js"></script>
 
 </html>

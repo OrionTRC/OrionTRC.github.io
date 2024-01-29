@@ -1,0 +1,152 @@
+
+.game-title{
+    text-decoration: underline;
+    font-variant:small-caps;
+    font-weight: 600;
+}
+
+.hero{
+    width: clamp(20rem,75vw,80rem);  
+}
+
+.hero-reverse{
+    background: var(--hero-fc);
+    color:var(--hero-bg);    
+}
+
+.desc{
+    display: inline-block;
+    min-width: 4em;    
+    margin-right:1em;
+    text-decoration: underline;
+}
+
+.hero-reverse + p{
+    margin: 0 0 1rem 0;
+    border-top:var(--hero-brd);
+    overflow-wrap: break-word;
+}
+
+.hero section{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: hidden;
+    width:100%;
+    margin-bottom:1rem;
+}
+
+.hero header:not(:empty){    
+    background: var(--hero-bg);
+    color:var(--hero-fc);  
+}
+
+.hero h2, .hero h3{
+    display:grid;
+    place-items: center;
+    text-align: center;    
+}
+
+.hero h2:not(:empty){
+    font-size:clamp(1.5rem,4vh,2rem); 
+    border-bottom:var(--hero-brd);
+    margin:1rem 1rem 0.5rem; 
+}
+
+.hero h3:not(:empty){
+    font-size:clamp(1.2rem,3vh,1.5rem);   
+    margin:0 1rem 1rem;    
+}  
+
+.hero div:has(details){
+    max-width:100%;
+    background: var(--hero-bg);
+    color:var(--hero-fc);
+}
+.hero details{
+    padding:1rem; 
+    max-width:100%;    
+}     
+
+.hero summary{
+    font-size:clamp(1.2rem,3vh,1.5rem);   
+}
+
+.hero table{
+    width:100%;
+}
+
+.hero table thead{
+    background: var(--hero-fc);
+    color:var(--hero-bg);
+    border:var(--hero-brd);
+}
+
+.hero th{
+    text-align: center;
+}
+
+.hero tbody{
+    border: var(--hero-brd);
+}
+
+.hero tbody tr{
+    border-bottom:var(--hero-brd)
+}
+
+.hero tbody tr td{
+    text-align: center;
+    padding: 0.25em 1em;
+    border-left: var(--hero-brd);
+    border-right: var(--hero-brd);
+}
+
+.hero tbody tr td:first-child{
+    text-align: start;
+    border:none;
+}
+
+.hero tbody tr td:last-child{
+    text-align: end;
+    border:none;
+}
+
+.hero tfoot tr td:not(:empty){
+    border-left:var(--hero-brd);
+    border-bottom: var(--hero-brd);
+}
+.hero tfoot tr td:not(:empty) + td:not(:empty){
+    border-left: none;
+}
+
+.hero tfoot tr td:first-child{
+    text-align:end;
+}
+.hero tfoot tr td:last-child{
+    text-align:start;
+    border-left:none;
+    border-right:var(--hero-brd);
+}
+
+.char-picture{
+   width:100%;
+   aspect-ratio: auto;
+   margin-bottom: 1rem;
+}
+
+.download{
+    position:fixed;
+    bottom:1rem;
+    right:2rem;
+}
+.download:after{
+    color:var(--hero-fc);
+    content:"\2709";
+    font-size:clamp(1.5rem,5vh,2rem);   
+}
+
+/* id specific */
+#stats th{
+    min-width:5rem;
+    width:33%;
+}  

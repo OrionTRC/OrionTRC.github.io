@@ -3,26 +3,43 @@
     --grail-fc:#474747;
 }
 
+#bodyCover {
+    background: var(--bg-color) var(--bg-pic) no-repeat center top;
+    background-size: cover;   
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    overflow: auto;
+}
+
 main.grail{
     display:grid;
     grid:1fr/auto 1fr auto;
     width:100%; 
 }
 
-
-.grail>*{
+.grail menu, .grail ul{
     background-color: var(--grail-bg);
     margin:1rem;
     color:var(--grail-fc);
 }   
 
 .grail menu li{
-    padding:1rem;
+    padding:0.5rem;
 }
 
 .grail menu a{
     color:var(--grail-fc);
     text-decoration: none;
+}
+
+.grail h2{
+    display:grid;
+    place-items: center;
+    text-align: center;    
+    font-size:clamp(1.5rem,4vh,2rem); 
+    margin:1rem 1rem 0.5rem; 
 }
 
 .grail .image-grid{
@@ -45,14 +62,9 @@ main.grail{
     display:block;   
     background:#FFF no-repeat center;;
     background-size: contain;   
-    height:clamp(10rem,25dh,25rem);
+    height:clamp(10rem,25vh,25rem);
     height:clamp(10rem,25dvh,25rem);
     margin:0.25rem;
     aspect-ratio: 1;
 }
 
-/* .grail .image-grid img{
-    aspect-ratio: auto;
-    max-height:25vh;
-    max-height: 25dvh;
-} */
