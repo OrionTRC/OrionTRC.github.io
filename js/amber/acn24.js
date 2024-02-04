@@ -189,3 +189,74 @@ export function tallman() {
         }
     };
 };
+
+export function alicia(){
+    return {
+        name: 'Alica Lang'
+        , title: 'Edwardiana'
+        , details:[
+            {label:'real name',value:'Zophasemin'}
+            , {label:'nickname',value:'Sophia'}
+            , {label: 'year of birth (official)',value:'1885'}   
+            , {label: 'age (official)',value:'27' }
+            , {label:'age (real)', value:'333'}
+        ]
+        , download:'./assets/files/Alicia.pdf'
+        , slot: '10-3'
+        , gm:'Tim H'
+        , stats: [
+            { stat: 'Psyche', value: 2, rank:'Well above Amber' }
+            , { stat: 'Strength', value: 5, rank:'Getting quite high'  }
+            , { stat: 'Endurance', value: 5, rank:'Well above Amber: Adamantium bones'  }
+            , { stat: 'Combat', value: -2, rank:'Mostly human'  }
+            , { stat: 'Presence', value: 3, rank:'Seriously high'  }
+        ]
+        , powers: [    
+            { name: 'Magic', details: 'Powered by essence' }
+            , { name: 'Ritual', details: 'Ritual leader' }
+        ]
+        , skills:[
+            {skill:'',value:''}
+        ]
+        , desc:{
+            blurb:``
+            , pic:'./assets/img/alicia.png'
+            , summary: 'Description'
+        }
+    };
+};
+
+function template(){
+    return {
+        name: ''
+        , title:''
+        , details:[
+            {label:'',value:''}
+        ]
+        , download:'./assets/files/'
+        , slot: ''
+        , gm:''
+        , stats: [
+            { stat: '', value: 0, rank:'' }
+        ]
+        , powers: [
+            Object.assign({},{}, { cost: 0, details: '' })
+            , { name: '', type: '', cost: 0, details: '' }
+        ]
+        , items: [
+            {
+                name: ''
+                , cost: 0
+                , qualities: ['','']
+                , quantity: 0
+                , description: ''
+            }
+        ]
+        , stuff: { type: '', value: 0 }
+        , desc:{
+            blurb:``
+            , pic:'./assets/img/'
+            , summary: ''
+        }
+    };
+};

@@ -17,11 +17,7 @@ function acnoir() {
     }
     , reno?.()
     , jen?.()
-    , {
-      name:''
-      , title:'Aurellis (Edwardiana)'
-      , slot:'10-3'
-    }
+    , alicia?.()
     , {
       name:'Zach Whitfield'
       , title:'My first heist'
