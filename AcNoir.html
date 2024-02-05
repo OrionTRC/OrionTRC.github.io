@@ -119,6 +119,20 @@
                 </div>
                 <!-- /ko -->
 
+                <!-- /ko with: $data.skills-->
+                <div id="skills">
+                    <details>
+                        <summary>Skills</summary>
+                        <ul data-bind="foreach: $data">
+                            <li>
+                                <span class="desc" data-bind="text: $data.skill"></span>
+                                <span data-bind="text: $data.value"></span>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- /ko -->
+
                 <!-- ko with: $data.items -->
                 <div id="items">
                     <details>
