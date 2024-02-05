@@ -226,37 +226,3 @@ export function alicia(){
     };
 };
 
-function template(){
-    return {
-        name: ''
-        , title:''
-        , details:[
-            {label:'',value:''}
-        ]
-        , download:'./assets/files/'
-        , slot: ''
-        , gm:''
-        , stats: [
-            { stat: '', value: 0, rank:'' }
-        ]
-        , powers: [
-            Object.assign({},{}, { cost: 0, details: '' })
-            , { name: '', type: '', cost: 0, details: '' }
-        ]
-        , items: [
-            {
-                name: ''
-                , cost: 0
-                , qualities: ['','']
-                , quantity: 0
-                , description: ''
-            }
-        ]
-        , stuff: { type: '', value: 0 }
-        , desc:{
-            blurb:``
-            , pic:'./assets/img/'
-            , summary: ''
-        }
-    };
-};
