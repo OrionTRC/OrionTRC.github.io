@@ -2,7 +2,7 @@ import {tallman} from './acn24.js';
 import {carl} from './acn24.js';
 import {jen} from './acn24.js';
 import {reno} from './acn24.js';
-
+import {alicia} from './acni24.js';
 
 function acnoir() {
   var self = this;
