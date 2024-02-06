@@ -266,14 +266,7 @@ export function alicia() {
 export function alexander() {
     return {
         name: 'Alexander Stranger'
-        , title: 'A brand new world'
-        , details: [
-            { label: 'real name', value: 'Zophasemin' }
-            , { label: 'nickname', value: 'Sophia' }
-            , { label: 'year of birth', value: '1885 (1579)' }
-            , { label: 'age', value: '27 (333)' }
-            , { label: 'mother', value: 'Jehoel' }
-        ]
+        , title: 'A brand new world'        
         , download: './assets/files/Alexander_Stranger.docx'
         , slot: '7-2'
         , gm: 'Paul J'
@@ -325,7 +318,7 @@ export function alexander() {
             }
         ]
         , desc: {
-            blurb: `Mister Stranger is a bit of a dreamer, a man of wealth and tase, who likes to think about things. He’s not a fighter, but he does have staying power. He takes great pride in his suit, which was tailor made for him; after all, as the song goes: every girl crazy for a sharp dressed man.
+            blurb: `Mister Stranger is a bit of a dreamer, a man of wealth and taste, who likes to think about things. He’s not a fighter, but he does have staying power. He takes great pride in his suit, which was tailor made for him; after all, as the song goes: every girl crazy for a sharp dressed man.
 A while ago, he picked up a strange looking key. He’s not quite sure what it opens, as of yet… but it feels like it will unlock something important.`
             , pic: './assets/img/alexander.png'
             , summary: 'Description'
