@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
     <link rel="stylesheet" href="css/acnoir.css" media="screen">
-    <script src="js/amber/powers.js"></script> 
+    <script src="js/amber/powers.js"></script>
 
     <title>Thom's kasteel - AmberCon Northen Ireland 2024</title>
 </head>
@@ -45,7 +45,6 @@
                     </details>
                 </div>
                 <!-- /ko -->
-
                 <!-- ko with: $data.details -->
                 <div>
                     <details>
@@ -55,10 +54,10 @@
                                 <span class="desc" data-bind="text: $data.label"></span>
                                 <span data-bind="text: $data.value"></span><br>
                             </span>
-                        </p>   
+                        </p>
                     </details>
                 </div>
-                <!-- /ko -->               
+                <!-- /ko -->
             </section>
 
             <section>
@@ -85,15 +84,13 @@
                                 <tr>
                                     <td data-bind="text: type"></td>
                                     <td>Stuff</td>
-                                    <td data-bind="text: value"></td>
-                                    </td>
+                                    <td data-bind="text: value"></td>                                    
                                 </tr>
                             </tfoot>
                         </table>
                     </details>
                 </div>
                 <!-- /ko -->
-
                 <!-- ko with: $data.powers -->
                 <div id="powers">
                     <details>
@@ -117,7 +114,6 @@
                     </details>
                 </div>
                 <!-- /ko -->
-
                 <!-- ko with: $data.skills-->
                 <div id="skills">
                     <details>
@@ -131,7 +127,6 @@
                     </details>
                 </div>
                 <!-- /ko -->
-
                 <!-- ko with: $data.items -->
                 <div id="items">
                     <details>
@@ -161,13 +156,12 @@
                 <!-- /ko -->
             </section>
             <!-- ko if: $data.download-->
-            <a class="download" data-bind="attr:{href: $data.download}" download target="_blank"></a>
+            <a class="download" href="#" data-bind="attr:{href: $data.download}" download target="_blank"></a>
             <!-- /ko -->
         </main>
     </div>
 
 </body>
+</html>
 <script src="js/knockout-3.5.1.js"></script>
 <script type="module" src="js/amber/acnoir.js"></script>
-
-</html>

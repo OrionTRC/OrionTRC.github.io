@@ -2,23 +2,23 @@ export function carl() {
     return {
         name: 'Carloman Randolph'
         , title: 'Who killed Julian'
-        , details:[
-            {label:'Occupation',value:'Stable hand'}
-            , {label:'Means',value:'Morgenstern, a cesspit and a wheelbarrow'}
-            , {label:'Motive', value:'The death of a friend, and Julian used him to train Morgenstern to hate Corwin'}
-            , {label:'Traits:',value:''}
-            ,{label:"\u2727",value:'Passing resemblance to Corwin'}
-            ,{label:"\u2727",value:'Affinity for animals, horses in particular'}
-            ,{label:"\u2727",value:'Holds grudges'}
-            ,{label:"\u2727",value:'Proud'}
-            ,{label:"\u2727",value:'Powerful physique'}
-            ,{label:"\u2727",value:'Better with animals than with people'}
+        , details: [
+            { label: 'Occupation', value: 'Stable hand' }
+            , { label: 'Means', value: 'Morgenstern, a cesspit and a wheelbarrow' }
+            , { label: 'Motive', value: 'The death of a friend, and Julian used him to train Morgenstern to hate Corwin' }
+            , { label: 'Traits:', value: '' }
+            , { label: "\u2727", value: 'Passing resemblance to Corwin' }
+            , { label: "\u2727", value: 'Affinity for animals, horses in particular' }
+            , { label: "\u2727", value: 'Holds grudges' }
+            , { label: "\u2727", value: 'Proud' }
+            , { label: "\u2727", value: 'Powerful physique' }
+            , { label: "\u2727", value: 'Better with animals than with people' }
         ]
-        , download:'./assets/files/carl.docx'
-        , slot:'6-3'
-        , gm:'Matthew'
-        , desc:{
-            blurb:`“Prince Julian? Yeah. I hate him. I really, really do. I suppose it’s not a secret. I mean… there’s not much to like, is there? He’s aloof, arrogant, cruel, prissy, cowardly, hell, I could go on and on about his many, many flaws. Look, I get it, nobody’s perfect, I’m no saint myself, but that guy? I could tell you stories, man. I really could.
+        , download: './assets/files/carl.docx'
+        , slot: '6-3'
+        , gm: 'Matthew'
+        , desc: {
+            blurb: `“Prince Julian? Yeah. I hate him. I really, really do. I suppose it’s not a secret. I mean… there’s not much to like, is there? He’s aloof, arrogant, cruel, prissy, cowardly, hell, I could go on and on about his many, many flaws. Look, I get it, nobody’s perfect, I’m no saint myself, but that guy? I could tell you stories, man. I really could.
             You see, I’m a stable hand… that’s not a stable boy, thank you very much, I take pride in my work. Or I used to do. Anyway…
             It’s hard work. Horses need a lot of maintenance, they need feeding and grooming, and their stabling cleared and cleaned out; you have no idea how much manure a single horse produces, I tell you. You can just keep shoveling all day and never be done. But it’s okay, it’s part of the job, and horses are generally nice to be around. They’re honest creatures, you know? Treat them right and you’ll get exactly what you give. They’re like these big, dumb, emotional, soulful mirrors, really. It’s hard to explain, if you don’t know horses. The important part to take away is that you have to treat them right, and you have to love them.
             And Julian? Well, our Princely Prince of Porcelain Perfection, he doesn’t love his horses. I don’t think he ever loved anything, except perhaps the sound of his own voice and his image in the mirror. He’s a selfish, narcissist prick. And a right arsehole, too. You know he calls me “Randy”? That is, if he even remembers my name. Otherwise it’s “hey, boy” or “you there”. The very best I can get from him is “Charlie”, which still isn’t my name, thank you very much. 
@@ -42,9 +42,9 @@ export function carl() {
             And I’d drop the barrow right on top of him, for good measure.
             All that’s left then is to seal the pit up, go home, and have a smoke and a beer, and remember my friend Christobal while that rotten bastard Julian sinks deep into the vile shitpuddle that his monster created, beaten, broken, alone and in the dark. Yeah.
             It’d never happen, I know. Who am I to raise a hand to a Prince? I’m just a lowly stable hand. It’s not my place. It’s nice to dream, though.
-            It’s nice to dream.”`            
+            It’s nice to dream.”`
             , summary: 'Story'
-            , pic:'./assets/img/carl.png'
+            , pic: './assets/img/carl.png'
         }
     };
 };
@@ -53,22 +53,22 @@ export function jen() {
     return {
         name: 'Jennifer Rennes'
         , title: 'Long Live the Queen'
-        , details:[
-            {label:'full name',value:'Princess Basilissa Regina Barimen of Benedict'}
+        , details: [
+            { label: 'full name', value: 'Princess Basilissa Regina Barimen of Benedict' }
         ]
-        , download:'./assets/files/jen.docx'
+        , download: './assets/files/jen.docx'
         , slot: '9-5'
-        , gm:'Scott'
+        , gm: 'Scott'
         , stats: [
-            { stat: 'Psyche', value: 20, rank:'Amber' }
-            , { stat: 'Strength', value: 0, rank:'Amber'  }
-            , { stat: 'Endurance', value: 5, rank:'Amber'  }
-            , { stat: 'Warfare', value: 35, rank:'Amber'  }
+            { stat: 'Psyche', value: 20, rank: 'Amber' }
+            , { stat: 'Strength', value: 0, rank: 'Amber' }
+            , { stat: 'Endurance', value: 5, rank: 'Amber' }
+            , { stat: 'Warfare', value: 35, rank: 'Amber' }
         ]
         , powers: [
-            Object.assign({},pattern, { cost: 0, details: 'free from character creation' })
+            Object.assign({}, pattern, { cost: 0, details: 'free from character creation' })
             , conjuration
-            , Object.assign({},powerWords, {
+            , Object.assign({}, powerWords, {
                 type: 'Schang, Krolak, Askiir, Jask, Marsk'
                 , details: 'True Form, Neural Disrupt, Psyche Disrupt, Trump Disrupt, Weaken Structure'
             })
@@ -78,14 +78,14 @@ export function jen() {
             {
                 name: 'Studded glove'
                 , cost: 6
-                , qualities: ['deadly damage','alternate shapes']
+                , qualities: ['deadly damage', 'alternate shapes']
                 , quantity: 1
                 , description: 'Glove, Gauntlet, Cestus, Dagger, Rapier, Claymore, Scissors, Pliers, Bolt cutter,  Crowbar, Baseball bat, Necklace'
             }
             , {
                 name: 'Suitable armor'
                 , cost: 10
-                , qualities: ['Impervious to Conventional Weapons','Limited Shape Shift','Danger Sense']
+                , qualities: ['Impervious to Conventional Weapons', 'Limited Shape Shift', 'Danger Sense']
                 , quantity: 1
                 , description: 'This item takes any shape or form its wearer psychically calls for. It shifts into battle armor form automatically when it senses danger.'
             }
@@ -98,9 +98,9 @@ export function jen() {
             }
         ]
         , stuff: { type: 'Good', value: 1 }
-        , desc:{
-            blurb:`Born to the name of Basilissa (and hating it, obviously), the youngest daughter of Benedict certainly isn’t the son he never had. Jenny isn’t regal, she’s not traditional, she certainly won’t apply herself to the tasks women are usually confined to (to her father’s annoyance), she’s not a really big fan of monarchy, and the only reason she even likes Random is because he’s actually quite fun to hang around with, when he’s not kinging around.  Having been taught Conjuration by Uncle Bleys and Power Words by Uncle Gerard, she makes it a point to get into as much trouble as she can whenever she’s around Amber. Anything to get a rise out of Dad, stoic bugger that he is.`
-            , pic:'./assets/img/jen3.png'
+        , desc: {
+            blurb: `Born to the name of Basilissa (and hating it, obviously), the youngest daughter of Benedict certainly isn’t the son he never had. Jenny isn’t regal, she’s not traditional, she certainly won’t apply herself to the tasks women are usually confined to (to her father’s annoyance), she’s not a really big fan of monarchy, and the only reason she even likes Random is because he’s actually quite fun to hang around with, when he’s not kinging around.  Having been taught Conjuration by Uncle Bleys and Power Words by Uncle Gerard, she makes it a point to get into as much trouble as she can whenever she’s around Amber. Anything to get a rise out of Dad, stoic bugger that he is.`
+            , pic: './assets/img/jen3.png'
             , summary: 'Description'
         }
     };
@@ -109,21 +109,21 @@ export function jen() {
 export function reno() {
     return {
         name: 'Renegade Turner'
-        , title:'Excuse me, are we related?'
-        , details:[
-            {label:'full name',value:'Renegade "Reno" Turner'}
-            , {label: 'Lineage',value:'Florimel'}
+        , title: 'Excuse me, are we related?'
+        , details: [
+            { label: 'full name', value: 'Renegade "Reno" Turner' }
+            , { label: 'Lineage', value: 'Florimel' }
         ]
-        , download:'./assets/files/reno.docx'
-        , slot:'8-1'
-        , gm:'Stephen Quick'
+        , download: './assets/files/reno.docx'
+        , slot: '8-1'
+        , gm: 'Stephen Quick'
         , stats: [
-            { stat: 'Psyche', value: 20, rank:'Amber' }
-            , { stat: 'Strength', value: 15, rank:'Amber'  }
-            , { stat: 'Endurance', value: 5, rank:'Amber'  }
-            , { stat: 'Warfare', value: 10, rank:'Amber'  }            
+            { stat: 'Psyche', value: 20, rank: 'Amber' }
+            , { stat: 'Strength', value: 15, rank: 'Amber' }
+            , { stat: 'Endurance', value: 5, rank: 'Amber' }
+            , { stat: 'Warfare', value: 10, rank: 'Amber' }
         ]
-        , powers: [pattern]           
+        , powers: [pattern]
         , items: [
             {
                 name: 'Nano-edged combat knife'
@@ -131,12 +131,12 @@ export function reno() {
                 , qualities: ['Extra hard']
                 , quantity: 1
                 , description: 'High-tech combat utility knife'
-            }            
+            }
         ]
         , stuff: { type: 'Bad', value: -1 }
-        , desc:{
-            blurb:`Renegade “Reno” Turner is a son of Florimel. Ironically named, Flora had him trained to be dashing, devious, strong and ruthless. Knowing full well that she needed people to be enforcers at times, she utilizes him to scout out situations and ‘ deal’ with anything unsavory, which in turn keeps her hands clean. And if things go south, well, she’ll claim she had “nothing to do with whatever that silly boy is up to… it’s in the name, isn’t it?” \nSuffice to say Reno doesn’t like his mother very much. He’s acutely aware of the power she holds over him, though, so he dare not oppose her … yet.`
-            , pic:'./assets/img/reno.png'
+        , desc: {
+            blurb: `Renegade “Reno” Turner is a son of Florimel. Ironically named, Flora had him trained to be dashing, devious, strong and ruthless. Knowing full well that she needed people to be enforcers at times, she utilizes him to scout out situations and ‘ deal’ with anything unsavory, which in turn keeps her hands clean. And if things go south, well, she’ll claim she had “nothing to do with whatever that silly boy is up to… it’s in the name, isn’t it?” \nSuffice to say Reno doesn’t like his mother very much. He’s acutely aware of the power she holds over him, though, so he dare not oppose her … yet.`
+            , pic: './assets/img/reno.png'
             , summary: 'Description'
         }
     };
@@ -144,38 +144,38 @@ export function reno() {
 
 export function tallman() {
     return {
-        name:'The Tall Man'
-        , title:'Burning Coal'
-        , slot:'5-2'
-        , powers:[
-          {
-            name:'Relentless'
-            , type:'strength'
-            , details:'Will not stop. Ever.'
-          }
-          ,{
-            name:'Strong-willed'
-            , type:'strength'
-          }
-          , {
-            name:'Vulnerable to cold'
-            , type:'weakness'
-          }
-          ,{
-            name:'Master of Illusion'
-            , type:'special'
-            , details:`Warping reality into illusion (make real things illusionary, not the other way around)`
-          }
+        name: 'The Tall Man'
+        , title: 'Burning Coal'
+        , slot: '5-2'
+        , powers: [
+            {
+                name: 'Relentless'
+                , type: 'strength'
+                , details: 'Will not stop. Ever.'
+            }
+            , {
+                name: 'Strong-willed'
+                , type: 'strength'
+            }
+            , {
+                name: 'Vulnerable to cold'
+                , type: 'weakness'
+            }
+            , {
+                name: 'Master of Illusion'
+                , type: 'special'
+                , details: `Warping reality into illusion (make real things illusionary, not the other way around)`
+            }
         ]
-        , details:[
-            {label:'former name',value:'Jebediah Morningside'}
+        , details: [
+            { label: 'former name', value: 'Jebediah Morningside' }
         ]
-        , download:'./assets/files/tallman.docx'
-        , gm:'Vivek'
+        , download: './assets/files/tallman.docx'
+        , gm: 'Vivek'
 
 
-        , desc:{
-            blurb:`Jebediah Morningside was an 19th century mortician who was absolutely fascinated by the concept of life after death. He was so enthralled by the idea that he actually invented and constructed a machine capable of creating a portal to the world beyond, and after activating it, he went through.
+        , desc: {
+            blurb: `Jebediah Morningside was an 19th century mortician who was absolutely fascinated by the concept of life after death. He was so enthralled by the idea that he actually invented and constructed a machine capable of creating a portal to the world beyond, and after activating it, he went through.
             That was the last time Jebediah Morningside ever set foot on this earth.
             What came back in his place looks just like him, but to anyone looking closely, it is quite clear that this facsimile isn’t actually him. In fact, it isn’t even human. Whatever it is, it’s taciturn, malevolent, and utterly unstoppable in pursuit of its goals, which seem to serve alien masters in a realm far away. No one really knows what it wants, or why. All anyone knows it that it collects corpses from graves, compresses them, and sends them away to his masters, presumably to be reanimated in that strange faraway world to serve as a slave labor force.
             Now here’s the thing:
@@ -184,43 +184,80 @@ export function tallman() {
             In this world, the Ministry would have quickly put a stop to the tall man, utilizing its own array of the strange and the weird… and for what? The dead and buried? No one would know if a grave was empty, excepting those few times a grave needs to be exhumed. A Burke or Hare is easily found to play the role of scapegoat in those cases (and have been). As such, it suits the tall man to align itself to the whims and whiles of the Ministry on occasion, in return for the right to rob graves in relative peace. It’s not like its masters are using him to create up an invading force to take over this reality and beyond using our own deceased, is it?
             Or is it? 
             `
-            , pic:'./assets/img/tallman.png'
+            , pic: './assets/img/tallman.png'
             , summary: 'Story'
         }
     };
 };
 
-export function alicia(){
+export function alicia() {
     return {
         name: 'Alica Lang'
-        , title: 'Edwardiana'
-        , details:[
-            {label:'real name',value:'Zophasemin'}
-            , {label:'nickname',value:'Sophia'}
-            , {label: 'year of birth (official)',value:'1885'}   
-            , {label: 'age (official)',value:'27' }
-            , {label:'age (real)', value:'333'}
+        , title: 'Aurelis - Edwardiana'
+        , details: [
+            { label: 'real name', value: 'Zophasemin' }
+            , { label: 'nickname', value: 'Sophia' }
+            , { label: 'year of birth', value: '1885 (1579)' }
+            , { label: 'age', value: '27 (333)' }
+            , {label:'mother', value:'Jehoel'}
         ]
-        , download:'./assets/files/Alicia.pdf'
+        , download: './assets/files/Alicia.pdf'
         , slot: '10-3'
-        , gm:'Tim H'
+        , gm: 'Tim H'
         , stats: [
-            { stat: 'Psyche', value: 2, rank:'Well above Amber' }
-            , { stat: 'Strength', value: 5, rank:'Getting quite high'  }
-            , { stat: 'Endurance', value: 5, rank:'Well above Amber: Adamantium bones'  }
-            , { stat: 'Combat', value: -2, rank:'Mostly human'  }
-            , { stat: 'Presence', value: 3, rank:'Seriously high'  }
+            { stat: 'Psyche', value: 2, rank: 'Well above Amber' }
+            , { stat: 'Strength', value: 5, rank: 'Getting quite high' }
+            , { stat: 'Endurance', value: 5, rank: 'Well above Amber: Adamantium bones' }
+            , { stat: 'Combat', value: -2, rank: 'Mostly human' }
+            , { stat: 'Presence', value: 3, rank: 'Seriously high' }
         ]
-        , powers: [    
+        , powers: [
             { name: 'Magic', details: 'Powered by essence' }
             , { name: 'Ritual', details: 'Ritual leader' }
         ]
-        , skills:[
-            {skill:'',value:''}
+        , skills: [
+            { skill: 'Combat(Eastern Martial Arts)', value: 'Superb' }
+            , { skill: 'Knowledge(Ancient Languages)', value: 'Superb' }
+            , { skill: 'Physics', value: 'Superb' }
+            , { skill: 'Acrobatics', value: 'Great'}
+            , { skill: 'Chemistry', value: 'Great'}
+            , { skill: 'Culture(Edwardiana)', value: 'Great'}
+            , { skill: 'Disguise', value: 'Great'}
+            , { skill: 'History(Ancient Edwardiana)', value: 'Great'}
+            , { skill: 'Knowledge(Mythology)', value: 'Great'}
+            , { skill: 'Lying and Deceit', value: 'Great'}
+            , { skill: 'Persuasion', value: 'Great'}
+            , { skill: 'Speak Ancient Greek', value: 'Great'}
+            , { skill: 'Speak English', value: 'Great'}
+            , { skill: 'Speak French', value: 'Great'}
+            , { skill: 'Speak Italian', value: 'Great'}
+            , { skill: 'Speak Latin', value: 'Great'}
+            , { skill: 'Speak Māori', value: 'Great'}
+            , { skill: 'Combat(Archery)', value: 'Good' }
+            , { skill: 'Dance(Ballroom)', value: 'Good' }
+            , { skill: 'Driving(car, small medium van)', value: 'Good' }
+            , { skill: 'Engineering(Mechanical)', value: 'Good' }
+            , { skill: 'Mathematics', value: 'Good' }
+            , { skill: 'Medical(First Aid)', value: 'Good' }
+            , { skill: 'Medical(General Practitioner)', value: 'Good' }
+            , { skill: 'Philosophy', value: 'Good' }
+            , { skill: 'Read / Write Ancient Greek', value: 'Good' }
+            , { skill: 'Read / Write English', value: 'Good' }
+            , { skill: 'Read / Write French', value: 'Good' }
+            , { skill: 'Read / Write Italian', value: 'Good' }
+            , { skill: 'Read / Write Latin', value: 'Good' }
+            , { skill: 'Read / Write Māori', value: 'Good' }
+            , { skill: 'Seduction', value: 'Good' }
+            , { skill: 'Sexuality', value: 'Good' }
+            , { skill: 'Swimming', value: 'Bad' }
+            , { skill: 'Riding(horse)', value: 'Horrible' }
         ]
-        , desc:{
-            blurb:``
-            , pic:'./assets/img/alicia.png'
+        , desc: {
+            blurb: `The famous scientist, miss Alicia Lang, pioneer on the fields of uncanny science and unrelenting progress. A most charming and elegant young lady of merely 27 years old, she's an exemplar of the values of proper education.
+            In actuality, Alicia's real name is Zophasemin, Sophia for short, and she was born a Grigori in the year 1579, making her over 3 centuries old in the current day and age. Her mother, Jehoel, left her to be raised with the Maori of New Zealand, after which she traveled far and wide, under many a name and face.
+            Having fallen in love with mankind, Sophia now strives to better their understanding of science and technology, hoping that the pursuit of progress will eventually free humanity from the whims of her mother's people.
+            To this day, she still has no idea who her father was.`
+            , pic: './assets/img/alicia.png'
             , summary: 'Description'
         }
     };
