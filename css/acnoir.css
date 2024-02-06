@@ -68,7 +68,7 @@
     max-width:100%;    
 }   
 
-.hero details.details-expand[open]{
+.hero div.details-expand:has(details[open]){
     width:100%
 }
 
