@@ -1,3 +1,50 @@
+export function tallman() {
+    return {
+        name: 'The Tall Man'
+        , title: 'Burning Coal'
+        , slot: '5-2'
+        , powers: [
+            {
+                name: 'Relentless'
+                , type: 'strength'
+                , details: 'Will not stop. Ever.'
+            }
+            , {
+                name: 'Strong-willed'
+                , type: 'strength'
+            }
+            , {
+                name: 'Vulnerable to cold'
+                , type: 'weakness'
+            }
+            , {
+                name: 'Master of Illusion'
+                , type: 'special'
+                , details: `Warping reality into illusion (make real things illusionary, not the other way around)`
+            }
+        ]
+        , details: [
+            { label: 'former name', value: 'Jebediah Morningside' }
+        ]
+        , download: './assets/files/tallman.docx'
+        , gm: 'Vivek'
+
+
+        , desc: {
+            blurb: `Jebediah Morningside was an 19th century mortician who was absolutely fascinated by the concept of life after death. He was so enthralled by the idea that he actually invented and constructed a machine capable of creating a portal to the world beyond, and after activating it, he went through.
+            That was the last time Jebediah Morningside ever set foot on this earth.
+            What came back in his place looks just like him, but to anyone looking closely, it is quite clear that this facsimile isn’t actually him. In fact, it isn’t even human. Whatever it is, it’s taciturn, malevolent, and utterly unstoppable in pursuit of its goals, which seem to serve alien masters in a realm far away. No one really knows what it wants, or why. All anyone knows it that it collects corpses from graves, compresses them, and sends them away to his masters, presumably to be reanimated in that strange faraway world to serve as a slave labor force.
+            Now here’s the thing:
+            If this were some kind of strange psychedelic low-budget horror movie, this would make for a terrifying foe which would be a constant threat to the main characters, who would try and fail to defeat it as it plays a long, inexplicable game with them on the road to world domination. 
+            It’s not.
+            In this world, the Ministry would have quickly put a stop to the tall man, utilizing its own array of the strange and the weird… and for what? The dead and buried? No one would know if a grave was empty, excepting those few times a grave needs to be exhumed. A Burke or Hare is easily found to play the role of scapegoat in those cases (and have been). As such, it suits the tall man to align itself to the whims and whiles of the Ministry on occasion, in return for the right to rob graves in relative peace. It’s not like its masters are using him to create up an invading force to take over this reality and beyond using our own deceased, is it?
+            Or is it? 
+            `
+            , pic: './assets/img/tallman.png'
+            , summary: 'Story'
+        }
+    };
+};
 export function carl() {
     return {
         name: 'Carloman Randolph'
@@ -142,53 +189,6 @@ export function reno() {
     };
 };
 
-export function tallman() {
-    return {
-        name: 'The Tall Man'
-        , title: 'Burning Coal'
-        , slot: '5-2'
-        , powers: [
-            {
-                name: 'Relentless'
-                , type: 'strength'
-                , details: 'Will not stop. Ever.'
-            }
-            , {
-                name: 'Strong-willed'
-                , type: 'strength'
-            }
-            , {
-                name: 'Vulnerable to cold'
-                , type: 'weakness'
-            }
-            , {
-                name: 'Master of Illusion'
-                , type: 'special'
-                , details: `Warping reality into illusion (make real things illusionary, not the other way around)`
-            }
-        ]
-        , details: [
-            { label: 'former name', value: 'Jebediah Morningside' }
-        ]
-        , download: './assets/files/tallman.docx'
-        , gm: 'Vivek'
-
-
-        , desc: {
-            blurb: `Jebediah Morningside was an 19th century mortician who was absolutely fascinated by the concept of life after death. He was so enthralled by the idea that he actually invented and constructed a machine capable of creating a portal to the world beyond, and after activating it, he went through.
-            That was the last time Jebediah Morningside ever set foot on this earth.
-            What came back in his place looks just like him, but to anyone looking closely, it is quite clear that this facsimile isn’t actually him. In fact, it isn’t even human. Whatever it is, it’s taciturn, malevolent, and utterly unstoppable in pursuit of its goals, which seem to serve alien masters in a realm far away. No one really knows what it wants, or why. All anyone knows it that it collects corpses from graves, compresses them, and sends them away to his masters, presumably to be reanimated in that strange faraway world to serve as a slave labor force.
-            Now here’s the thing:
-            If this were some kind of strange psychedelic low-budget horror movie, this would make for a terrifying foe which would be a constant threat to the main characters, who would try and fail to defeat it as it plays a long, inexplicable game with them on the road to world domination. 
-            It’s not.
-            In this world, the Ministry would have quickly put a stop to the tall man, utilizing its own array of the strange and the weird… and for what? The dead and buried? No one would know if a grave was empty, excepting those few times a grave needs to be exhumed. A Burke or Hare is easily found to play the role of scapegoat in those cases (and have been). As such, it suits the tall man to align itself to the whims and whiles of the Ministry on occasion, in return for the right to rob graves in relative peace. It’s not like its masters are using him to create up an invading force to take over this reality and beyond using our own deceased, is it?
-            Or is it? 
-            `
-            , pic: './assets/img/tallman.png'
-            , summary: 'Story'
-        }
-    };
-};
 
 export function alicia() {
     return {
@@ -263,3 +263,72 @@ export function alicia() {
     };
 };
 
+export function alexander() {
+    return {
+        name: 'Alexander Stranger'
+        , title: 'A brand new world'
+        , details: [
+            { label: 'real name', value: 'Zophasemin' }
+            , { label: 'nickname', value: 'Sophia' }
+            , { label: 'year of birth', value: '1885 (1579)' }
+            , { label: 'age', value: '27 (333)' }
+            , { label: 'mother', value: 'Jehoel' }
+        ]
+        , download: './assets/files/Alexander_Stranger.docx'
+        , slot: '7-2'
+        , gm: 'Paul J'
+        , stats: [
+            { stat: 'Psyche', value: 25, rank: 'Amber' }
+            , { stat: 'Endurance', value: 15, rank: 'Amber' }
+            , { stat: 'Strength', value: 5, rank: 'Amber' }
+            , { stat: 'Warfare', value: -10, rank: 'Chaos' }
+        ]
+        , powers: [
+            {
+                name: 'Energy Manipulation'
+                , type: 'Psionic'
+                , cost: 15
+                , details: 'Absorb, Create, Negate energy'
+            }
+            , {
+                name: 'Psychic Defense'
+                , type: 'Psionic'
+                , cost: 15
+                , details: 'Psychic, physical, elemental shielding'
+            }
+            , {
+                name: 'Walker'
+                , cost: 3
+                , details: 'Shadow trail, path, seek, Exegesis'
+            }
+            , {
+                name: 'Empathy'
+                , cost: 2
+                , details: 'Sense psyche'
+            }
+        ]
+        , items: [
+            {
+                name: 'Excellent suit'
+                , cost: 4
+                , qualities: ['Impervious armor']
+                , quantity: 1
+                , description: 'Tailor made indestructible edwardian style suit,grey'
+            }
+            ,
+            {
+                name: 'Skeleton key'
+                , cost: 1
+                , qualities: ['mold shadow stuff']
+                , quantity: 1
+                , description:'An odd looking key that seems to fit and open any mundane lock.'
+            }
+        ]
+        , desc: {
+            blurb: `Mister Stranger is a bit of a dreamer, a man of wealth and tase, who likes to think about things. He’s not a fighter, but he does have staying power. He takes great pride in his suit, which was tailor made for him; after all, as the song goes: every girl crazy for a sharp dressed man.
+A while ago, he picked up a strange looking key. He’s not quite sure what it opens, as of yet… but it feels like it will unlock something important.`
+            , pic: './assets/img/alexander.png'
+            , summary: 'Description'
+        }
+    };
+};

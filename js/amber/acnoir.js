@@ -1,4 +1,4 @@
-import {tallman,carl,jen,reno,alicia} from './acn24.js';
+import {tallman,carl,jen,reno,alicia,alexander} from './acn24.js';
 
 function acnoir() {
   var self = this;
@@ -6,11 +6,7 @@ function acnoir() {
   self.games = ko.observableArray([
     tallman?.()
     , carl?.()
-    , {
-      name:''
-      , title:'A brand new world'
-      , slot:'7-2'
-    }
+    , alexander?.()
     , reno?.()
     , jen?.()
     , alicia?.()
