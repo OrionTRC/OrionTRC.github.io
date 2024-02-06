@@ -136,6 +136,11 @@
     border-right: var(--hero-brd);
 }
 
+.hero ul.grid-list li {
+    display:grid;
+    grid-template-rows:1fr auto;
+}
+
 .char-picture {
     width: 100%;
     aspect-ratio: auto;

@@ -84,7 +84,7 @@
                                 <tr>
                                     <td data-bind="text: type"></td>
                                     <td>Stuff</td>
-                                    <td data-bind="text: value"></td>                                    
+                                    <td data-bind="text: value"></td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -118,11 +118,17 @@
                 <div id="skills">
                     <details>
                         <summary>Skills</summary>
-                        <ul data-bind="foreach: $data">
+                        <ul class="grid-list">
+                            <li class="hero-reverse">
+                                <span>skill</span>
+                                <span>mastery</span>
+                            </li>
+                            <!-- ko foreach: $data-->
                             <li>
                                 <span class="desc" data-bind="text: $data.skill"></span>
                                 <span data-bind="text: $data.value"></span>
                             </li>
+                            <!-- /ko-->
                         </ul>
                     </details>
                 </div>
