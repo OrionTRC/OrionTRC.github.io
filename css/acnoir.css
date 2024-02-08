@@ -138,7 +138,7 @@
 
 .hero ul.grid-list li {
     display:grid;
-    grid-template-rows:1fr auto;
+    grid-template-columns:minmax(auto,1fr) auto;
 }
 
 .char-picture {

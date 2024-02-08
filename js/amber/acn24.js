@@ -95,7 +95,6 @@ export function carl() {
         }
     };
 };
-
 export function jen() {
     return {
         name: 'Jennifer Rennes'
@@ -152,7 +151,6 @@ export function jen() {
         }
     };
 };
-
 export function reno() {
     return {
         name: 'Renegade Turner'
@@ -188,8 +186,6 @@ export function reno() {
         }
     };
 };
-
-
 export function alicia() {
     return {
         name: 'Alica Lang'
@@ -207,13 +203,14 @@ export function alicia() {
         , stats: [
             { stat: 'Psyche', value: 2, rank: 'Well above Amber' }
             , { stat: 'Strength', value: 5, rank: 'Getting quite high' }
-            , { stat: 'Endurance', value: 5, rank: 'Well above Amber: Adamantium bones' }
+            , { stat: 'Endurance', value: 5, rank: 'Well above Amber' }
             , { stat: 'Combat', value: -2, rank: 'Mostly human' }
             , { stat: 'Presence', value: 3, rank: 'Seriously high' }
         ]
         , powers: [
             { name: 'Magic', details: 'Powered by essence' }
             , { name: 'Ritual', details: 'Ritual leader' }
+            , { name:' Adamantium bones', details:'inherent from Endurance'}
         ]
         , skills: [
             { skill: 'Combat(Eastern Martial Arts)', value: 'Superb' }
@@ -262,7 +259,6 @@ export function alicia() {
         }
     };
 };
-
 export function alexander() {
     return {
         name: 'Alexander Stranger'
