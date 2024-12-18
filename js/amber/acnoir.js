@@ -3,7 +3,7 @@ function importYear(e, el) {
     const amberBody = document.getElementById('bodyCover');
     const yr = el.dataset.year;
     
-    import(`./acn${yr}.js`).then(() => {
+    import(`./acn_${yr}.js`).then(() => {
         ko.applyBindings(new acnoir(acn()));
     });  
 };
