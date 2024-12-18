@@ -16,12 +16,13 @@
 <body>
     <div id="bodyCover" style="--bg-pic:url('../assets/img/amberBG.png');">
         <header id="header">
-            <h1 class="flex-title">
+            <!--<h1 class="flex-title">
                 <a href="index.html">Thom's Kasteel</a>
                <span></span>
                 <a href="#" data-bind="click:function(){importYear(event,this)}" data-year="24">2024</a>
                 <a href="#" data-bind="click:function(){importYear(event,this)}" data-year="25">2025</a>
-            </h1>
+            </h1>-->
+            <h1><a href="index.html">Thom's Kasteel</a></h1>
             <button type="button" id="menuOpen" tabindex="-1" hidden></button>
             <nav>
                 <menu data-bind="foreach: games">
@@ -39,6 +40,12 @@
                 <h2 data-bind="text: $data.title"></h2>
                 <h3 data-bind="text: $data.name"></h3>
             </header>
+
+            <details>
+                <summary><h2>&#9776;</h2></summary>
+                <a href="#" data-bind="click:function(){importYear(event,this)}" data-year="24">2024</a><br/>
+                <a href="#" data-bind="click:function(){importYear(event,this)}" data-year="25">2025</a><br/>
+            </details>
 
             <section>
                 <!-- ko with: $data.desc -->
