@@ -1,26 +1,15 @@
-import {jen} from './jen.js';
-import {carl} from './carl.js';
-import {tallman} from './tallman.js';
-import {reno} from './reno.js';
+import {tallman,carl,jen,reno,alicia,alexander} from './acn24.js';
 
-function Acnoir24() {
+function acnoir24() {
   var self = this;
 
   self.games = ko.observableArray([
     tallman?.()
     , carl?.()
-    , {
-      name:''
-      , title:'A brand new world'
-      , slot:'7-2'
-    }
+    , alexander?.()
     , reno?.()
     , jen?.()
-    , {
-      name:''
-      , title:'Aurellis (Edwardiana)'
-      , slot:'10-3'
-    }
+    , alicia?.()
     , {
       name:'Zach Whitfield'
       , title:'My first heist'
@@ -36,4 +25,4 @@ function Acnoir24() {
   };
 };
 
-ko.applyBindings(new Acnoir24());
+ko.applyBindings(new acnoir24());

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/acnoir.css" media="screen">
+    <script src="js/amber/powers.js"></script>
+
+    <title>Thom's kasteel - AmberCon Northen Ireland 2024</title>
+</head>
+
+<body>
+    <div id="bodyCover" style="--bg-pic:url('../assets/img/amberBG.png');">
+        <header id="header">
+            <h1> <a href="index.html">Thom's Kasteel</a> </h1>
+            <button type="button" id="menuOpen" tabindex="-1" hidden></button>
+            <nav>
+                <menu data-bind="foreach: games">
+                    <li>
+                        <button type="button" data-bind="click: function(data,event){$parent.selectGame(data,event)}">
+                            <span class="game-title" data-bind="text: $data.title"></span><br>
+                            <span data-bind="text: $data.name"></span>
+                        </button>
+                    </li>
+                </menu>
+            </nav>
+        </header>
+        <main class="hero" data-bind="with: selectedGame">
+            <header>
+                <h2 data-bind="text: $data.title"></h2>
+                <h3 data-bind="text: $data.name"></h3>
+            </header>
+
+            <section>
+                <!-- ko with: $data.desc -->
+                <div class="details-expand">
+                    <details class="details-expand">
+                        <summary data-bind="text: summary"></summary>
+                        <img class="char-picture" data-bind="attr: {'src': $data.pic}">
+                        <p data-bind="text: $data.blurb"></p>
+                    </details>
+                </div>
+                <!-- /ko -->
+                <!-- ko with: $data.details -->
+                <div>
+                    <details>
+                        <summary>Details</summary>
+                        <p data-bind="foreach: $data">
+                            <span>
+                                <span class="desc" data-bind="text: $data.label"></span>
+                                <span data-bind="text: $data.value"></span><br>
+                            </span>
+                        </p>
+                    </details>
+                </div>
+                <!-- /ko -->
+            </section>
+
+            <section>
+                <!-- ko with: $data.stats -->
+                <div id="stats">
+                    <details>
+                        <summary>Abilities</summary>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ability</th>
+                                    <th>Rank</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody data-bind="foreach: $data">
+                                <tr>
+                                    <td data-bind="text: stat"></td>
+                                    <td data-bind="text: rank"></td>
+                                    <td data-bind="text: value"></td>
+                                </tr>
+                            </tbody>
+                            <tfoot data-bind="with: $parent.stuff">
+                                <tr>
+                                    <td data-bind="text: type"></td>
+                                    <td>Stuff</td>
+                                    <td data-bind="text: value"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </details>
+                </div>
+                <!-- /ko -->
+                <!-- ko with: $data.powers -->
+                <div id="powers">
+                    <details>
+                        <summary>Powers</summary>
+                        <ul data-bind="foreach: $data">
+                            <li>
+                                <span data-bind="text: name" class="hero-reverse"></span>
+                                <p>
+                                    <!-- ko with: $data.type-->
+                                    <span class="desc">Type</span><span data-bind="text: $data"></span><br>
+                                    <!-- /ko -->
+                                    <!-- ko with: $data.cost-->
+                                    <span class="desc">cost</span><span data-bind="text: $data"></span><br>
+                                    <!-- /ko -->
+                                    <!-- ko with: $data.details-->
+                                    <span class="desc">details</span><span data-bind="text: $data"></span>
+                                    <!-- /ko -->
+                                </p>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- /ko -->
+                <!-- ko with: $data.skills-->
+                <div id="skills">
+                    <details>
+                        <summary>Skills</summary>
+                        <ul class="grid-list">
+                            <li class="hero-reverse">
+                                <span>skill</span>
+                                <span>mastery</span>
+                            </li>
+                            <!-- ko foreach: $data-->
+                            <li>
+                                <span class="desc" data-bind="text: $data.skill"></span>
+                                <span data-bind="text: $data.value"></span>
+                            </li>
+                            <!-- /ko-->
+                        </ul>
+                    </details>
+                </div>
+                <!-- /ko -->
+                <!-- ko with: $data.items -->
+                <div id="items">
+                    <details>
+                        <summary>Artefacts</summary>
+                        <ul data-bind="foreach: $data">
+                            <li>
+                                <span data-bind="text: name" class="hero-reverse"></span>
+                                <p>
+                                    <!-- ko with: $data.description -->
+                                    <span class="desc">Description</span><span data-bind="text: $data"></span><br>
+                                    <!-- /ko -->
+                                    <!-- ko with: $data.cost-->
+                                    <span class="desc">Cost</span><span data-bind="text: $data"></span><br>
+                                    <!-- /ko -->
+                                    <!-- ko with: $data.quantity-->
+                                    <span class="desc">Quantity</span><span data-bind="text: $data"></span>
+                                    <!-- /ko -->
+                                </p>
+                                <span class="desc">Qualities</span>
+                                <ul data-bind="foreach: qualities">
+                                    <li data-bind="text:$data"></li>
+                                </ul><br>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- /ko -->
+            </section>
+            <!-- ko if: $data.download-->
+            <a class="download" href="#" data-bind="attr:{href: $data.download}" download target="_blank"></a>
+            <!-- /ko -->
+        </main>
+    </div>
+
+</body>
+</html>
+<script src="js/knockout-3.5.1.js"></script>
+<script type="module" src="js/amber/acnoir24.js"></script>
