@@ -28,13 +28,15 @@
         <main>
             <menu></menu>
             <section>
-                <h2></h2>
-                <form id="frmResize" method="post" autocomplete="off" onsubmit="return false;">
+                <h2>Image resizer</h2>
+                <form id="frmResize" class="frmResize" method="post" autocomplete="off" onsubmit="return false;">
                     <div class="col">
                         <label>
                             input images<br />
                             <input type="file" name="inpFile" id="inpFile" accept="image/*" multiple onchange="fileInput()" />
                         </label>
+                    </div>
+                    <div class="col col2">
                         <label>
                             current image <br>
                             <input type="text" disabled id="current">
@@ -49,24 +51,24 @@
                         <meter id="meter" value="0"></meter>
                     </div>
 
-                    <div class="col">
-                        <label for="inpSizeChoice">
-                            <input type="radio" name="inpChoice" id="inpSizeChoice" value="size">
-                            size % <br>
-                            <input type="number" name="inpSize" id="inpSize" min="1" onfocus="fncFocus(this)"
-                                   onchange="setPreview(this)" onblur="setPreview(this)" checked>
-                        </label>
+                    <div class="col col3">
                         <label for="inpHeightChoice">
                             <input type="radio" name="inpChoice" id="inpHeightChoice" value="height">
-                            height (px) <br>
+                            height<br>
                             <input type="number" name="inpHeight" id="inpHeight" min="1" onfocus="fncFocus(this)"
                                    onchange="setPreview(this)" onblur="setPreview(this)">
                         </label>
                         <label for="inpWidthChoice">
                             <input type="radio" name="inpChoice" id="inpWidthChoice" value="width">
-                            width (px) <br>
+                            width<br>
                             <input type="number" name="inpWidth" id="inpWidth" min="1" onfocus="fncFocus(this)"
                                    onchange="setPreview(this)" onblur="setPreview(this)">
+                        </label>
+                        <label for="inpSizeChoice">
+                            <input type="radio" name="inpChoice" id="inpSizeChoice" value="size">
+                            size % <br>
+                            <input type="number" name="inpSize" id="inpSize" min="1" onfocus="fncFocus(this)"
+                                   onchange="setPreview(this)" onblur="setPreview(this)" checked>
                         </label>
                     </div>
                     <br>
@@ -77,12 +79,12 @@
                     </div>
 
                 </form>
-                <div id="previewDiv"></div>
+                <div class="preview" id="previewDiv"></div>
             </section>
 
             <aside></aside>
         </main>
-    </div>  
+    </div>
 
     <script src="js/jszip.min.js"></script>
     <script src="js/main.js"></script>
