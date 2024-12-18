@@ -18,9 +18,9 @@
         <header id="header">
             <h1 class="flex-title">
                 <a href="index.html">Thom's Kasteel</a>
-                <span></span>
-                <a href="#" data-bind="click:function(){importYear(event)}" data-year="24">2024</a>
-                <a href="#" data-bind="click:function(){importYear(event)}" data-year="25">2025</a>
+               <span></span>
+                <a href="#" data-bind="click:function(){importYear(event,this)}" data-year="24">2024</a>
+                <a href="#" data-bind="click:function(){importYear(event,this)}" data-year="25">2025</a>
             </h1>
             <button type="button" id="menuOpen" tabindex="-1" hidden></button>
             <nav>

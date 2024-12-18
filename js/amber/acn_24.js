@@ -314,6 +314,11 @@ A while ago, he picked up a strange looking key. He’s not quite sure what it o
                 , pic: './assets/img/alexander.png'
                 , summary: 'Description'
             }
+        },
+        zack: {
+            name: 'Zach Whitfield'
+            , title: 'My first heist'
+            , slot: '11-5'
         }
     }
 };
