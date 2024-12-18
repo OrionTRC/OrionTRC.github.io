@@ -195,7 +195,7 @@ export function alicia() {
             , { label: 'nickname', value: 'Sophia' }
             , { label: 'year of birth', value: '1885 (1579)' }
             , { label: 'age', value: '27 (333)' }
-            , {label:'mother', value:'Jehoel'}
+            , { label: 'mother', value: 'Jehoel' }
         ]
         , download: './assets/files/Alicia.pdf'
         , slot: '10-3'
@@ -210,26 +210,26 @@ export function alicia() {
         , powers: [
             { name: 'Magic', details: 'Powered by essence' }
             , { name: 'Ritual', details: 'Ritual leader' }
-            , { name:' Adamantium bones', details:'inherent from Endurance'}
+            , { name: ' Adamantium bones', details: 'inherent from Endurance' }
         ]
         , skills: [
             { skill: 'Combat(Eastern Martial Arts)', value: 'Superb' }
             , { skill: 'Knowledge(Ancient Languages)', value: 'Superb' }
             , { skill: 'Physics', value: 'Superb' }
-            , { skill: 'Acrobatics', value: 'Great'}
-            , { skill: 'Chemistry', value: 'Great'}
-            , { skill: 'Culture(Edwardiana)', value: 'Great'}
-            , { skill: 'Disguise', value: 'Great'}
-            , { skill: 'History(Ancient Edwardiana)', value: 'Great'}
-            , { skill: 'Knowledge(Mythology)', value: 'Great'}
-            , { skill: 'Lying and Deceit', value: 'Great'}
-            , { skill: 'Persuasion', value: 'Great'}
-            , { skill: 'Speak Ancient Greek', value: 'Great'}
-            , { skill: 'Speak English', value: 'Great'}
-            , { skill: 'Speak French', value: 'Great'}
-            , { skill: 'Speak Italian', value: 'Great'}
-            , { skill: 'Speak Latin', value: 'Great'}
-            , { skill: 'Speak Māori', value: 'Great'}
+            , { skill: 'Acrobatics', value: 'Great' }
+            , { skill: 'Chemistry', value: 'Great' }
+            , { skill: 'Culture(Edwardiana)', value: 'Great' }
+            , { skill: 'Disguise', value: 'Great' }
+            , { skill: 'History(Ancient Edwardiana)', value: 'Great' }
+            , { skill: 'Knowledge(Mythology)', value: 'Great' }
+            , { skill: 'Lying and Deceit', value: 'Great' }
+            , { skill: 'Persuasion', value: 'Great' }
+            , { skill: 'Speak Ancient Greek', value: 'Great' }
+            , { skill: 'Speak English', value: 'Great' }
+            , { skill: 'Speak French', value: 'Great' }
+            , { skill: 'Speak Italian', value: 'Great' }
+            , { skill: 'Speak Latin', value: 'Great' }
+            , { skill: 'Speak Māori', value: 'Great' }
             , { skill: 'Combat(Archery)', value: 'Good' }
             , { skill: 'Dance(Ballroom)', value: 'Good' }
             , { skill: 'Driving(car, small medium van)', value: 'Good' }
@@ -262,7 +262,7 @@ export function alicia() {
 export function alexander() {
     return {
         name: 'Alexander Stranger'
-        , title: 'A brand new world'        
+        , title: 'A brand new world'
         , download: './assets/files/Alexander_Stranger.docx'
         , slot: '7-2'
         , gm: 'Paul J'
@@ -310,7 +310,7 @@ export function alexander() {
                 , cost: 1
                 , qualities: ['mold shadow stuff']
                 , quantity: 1
-                , description:'An odd looking key that seems to fit and open any mundane lock.'
+                , description: 'An odd looking key that seems to fit and open any mundane lock.'
             }
         ]
         , desc: {

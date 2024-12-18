@@ -16,7 +16,11 @@
 <body>
     <div id="bodyCover" style="--bg-pic:url('../assets/img/amberBG.png');">
         <header id="header">
-            <h1> <a href="index.html">Thom's Kasteel</a> </h1>
+            <h1 class="flex-title">
+                <a href="index.html">Thom's Kasteel</a>
+                <a href="#" onclick="importYear(event,this)" data-year="24">2024</a>
+                <a href="#" onclick="importYear(event,this)" data-year="25">2025</a>
+            </h1>
             <button type="button" id="menuOpen" tabindex="-1" hidden></button>
             <nav>
                 <menu data-bind="foreach: games">
@@ -171,3 +175,4 @@
 </html>
 <script src="js/knockout-3.5.1.js"></script>
 <script type="module" src="js/amber/acnoir24.js"></script>
+

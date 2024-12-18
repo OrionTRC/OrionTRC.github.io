@@ -159,6 +159,18 @@
         font-size: clamp(1.5rem,5vh,2rem);
     }
 
+.flex-title {
+    display: flex;    
+}
+    .flex-title > a {
+        flex-grow: 0;
+        padding:0 1rem;
+    }
+
+.flex-title>a:first-child{
+    flex-grow:1;
+}
+
 /* id specific */
 #stats th {
     min-width: 3rem;

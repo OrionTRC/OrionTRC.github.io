@@ -1,28 +1,21 @@
-import {tallman,carl,jen,reno,alicia,alexander} from './acn24.js';
+function importYear(e, el) {
+    e.preventDefault();
+    const amberBody = document.getElementById('bodyCover');
+    const yr = el.dataset.year;
+    
+    import(`./acn${yr}.js`).then(module => module.loadPageInto(amberBody)).then(() => {
+        ko.applyBindings(new acnoir(acn()));
+    });  
+}
 
-function acnoir() {
-  var self = this;
+function acnoir(ac) {
+    var self = this;
+    const chars = Object.values(ac);   
 
-  self.games = ko.observableArray([
-    tallman?.()
-    , carl?.()
-    , alexander?.()
-    , reno?.()
-    , jen?.()
-    , alicia?.()
-    , {
-      name:'Zach Whitfield'
-      , title:'My first heist'
-      , slot:'11-5'
-    }
-  ]);
+    self.selectedGame = ko.observable({});
 
-  self.selectedGame = ko.observable({});
-
-  self.selectGame = function(game,event){
-    self.selectedGame(game);
-    event.target.closest('button').blur();
-  };
+    self.selectGame = function (game, event) {
+        self.selectedGame(game);
+        event.target.closest('button').blur();
+    };
 };
-
-ko.applyBindings(new acnoir());
