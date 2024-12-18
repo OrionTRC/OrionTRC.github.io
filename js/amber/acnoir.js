@@ -14,6 +14,8 @@ function acnoir() {
         import(`./acn_${yr}.js`).then((mod) => {           
             self.gameset = [...Object.values(mod.acn())];
             self.games(self.gameset);
+        }).catch(() => {
+            self.games([]);
         });
     };
 
