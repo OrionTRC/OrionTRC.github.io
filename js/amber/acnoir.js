@@ -2,7 +2,7 @@
 function acnoir() {
     var self = this;
 
-    sel.gameset = [];
+    self.gameset = [];
     self.games = ko.observableArray([]);
 
     self.selectedGame = ko.observable({});
