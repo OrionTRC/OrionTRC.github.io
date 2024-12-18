@@ -10,7 +10,8 @@ function importYear(e, el) {
 
 function acnoir(ac) {
     var self = this;
-    const chars = Object.values(ac);   
+    const gameset = [...Object.values(ac)];   
+    self.games = ko.observableArray(gameset);
 
     self.selectedGame = ko.observable({});
 
