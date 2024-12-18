@@ -167,7 +167,7 @@
         padding:0 1rem;
     }
 
-.flex-title>a:first-child{
+.flex-title>span{
     flex-grow:1;
 }
 
