@@ -1,4 +1,4 @@
-
+.
 function acnoir() {
     var self = this;
 
@@ -12,10 +12,9 @@ function acnoir() {
         const amberBody = document.getElementById('bodyCover');
         const yr = e.target.dataset.year;
 
-        import(`./acn_${yr}.js`).then((mod) => {
-            yearBinding = mod;
-            gameset = [...Object.values(mod.acn())];
-            self.games = ko.observableArray(gameset);
+        import(`./acn_${yr}.js`).then((mod) => {           
+            self.gameset = [...Object.values(mod.acn())];
+            self.games(self.gameset);
         });
     };
 
