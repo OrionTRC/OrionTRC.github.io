@@ -1,4 +1,3 @@
-.
 function acnoir() {
     var self = this;
 
