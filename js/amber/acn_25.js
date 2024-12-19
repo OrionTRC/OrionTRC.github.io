@@ -20,18 +20,7 @@ export function acn() {
         {
             name: 'Jake ...something'
             , title: 'Frat House Freak-out'
-            , details: [
-                { label: 'Occupation', value: 'Stable hand' }
-                , { label: 'Means', value: 'Morgenstern, a cesspit and a wheelbarrow' }
-                , { label: 'Motive', value: 'The death of a friend, and Julian used him to train Morgenstern to hate Corwin' }
-                , { label: 'Traits:', value: '' }
-                , { label: "\u2727", value: 'Passing resemblance to Corwin' }
-                , { label: "\u2727", value: 'Affinity for animals, horses in particular' }
-                , { label: "\u2727", value: 'Holds grudges' }
-                , { label: "\u2727", value: 'Proud' }
-                , { label: "\u2727", value: 'Powerful physique' }
-                , { label: "\u2727", value: 'Better with animals than with people' }
-            ]
+            , details: []
             , download: './assets/files/ac25/jake.docx'
             , slot: '7-4'
             , gm: 'Tym'
@@ -139,7 +128,7 @@ A while ago, he picked up a strange looking key. He’s not quite sure what it o
         jen:
         {
             name: 'Jennifer Rennes'
-            , title: 'Long Live the Queen'
+            , title: `On her Majesty's service`
             , details: [
                 { label: 'full name', value: 'Princess Basilissa Regina Barimen of Benedict' }
             ]

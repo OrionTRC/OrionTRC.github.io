@@ -4,12 +4,10 @@ function acnoir() {
 
     self.gameset = [];
     self.games = ko.observableArray([]);
-
     self.selectedGame = ko.observable({});
 
     self.importYear = function (e) {
-        e.preventDefault();
-        const amberBody = document.getElementById('bodyCover');
+        e.preventDefault();      
         const yr = e.target.dataset.year;
 
         import(`./acn_${yr}.js`).then((mod) => {
