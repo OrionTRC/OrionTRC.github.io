@@ -3,6 +3,8 @@ function setMeter() {
     setMeter.max ??= 1;
     setMeter.value = ((setMeter.counter + 1) / setMeter.max).toFixed(2);
     document.getElementById("meter").value = setMeter.value;
+    document.getElementById('counter').value = setMeter.counter + 1;
+    document.getElementById('current').value = document.getElementById('inpFile').files[setMeter.counter].name;
 }
 function downloadSingle() {
     setMeter.counter ??= 0;
@@ -31,31 +33,58 @@ function toggleButtons(disable = false) {
     );
 };
 
-async function downloadZip() {
-    const files = document.getElementById('inpFile')?.files;
-    if (files?.length) {             
-        const zip = new JSZip();
+function fileSizeTotal(files, fileSize = 0) {
+    for (let i = setMeter.counter; i < setMeter.max; i++) {
+        fileSize += files[i].size;
+    }
+    return fileSize;
+};
+
+async function downloadZip(zip) {
+    const inp = document.getElementById('inpFile');
+    if (inp.files?.length) {
+        inp.disabled = true;
         toggleButtons(true);
 
-        /*for (const file of files) {*/
-        for (let file; file = files[setMeter.counter]; setMeter.counter++) {
-            setMeter();
-            await getResizedImageDataURL(file)
-                .then(function (href) {
-                    const data = href.substr(href.indexOf(',') + 1);
-                    const [name, ext] = splitFileName(file.name)
-                    zip.file(`${name}_rs.${ext}`, data, { base64: true });                                      
-                });
+        for (let file; file = inp.files[setMeter.counter]; setMeter(), setMeter.counter++) {
+            const [name, ext] = splitFileName(file.name);
+            const href = await getResizedImageDataURL(file);
+            const data = href.substr(href.indexOf(',') + 1);
+            zip = await genZip(zip, data.length);
+            zip.file(`${name}_rs.${ext}`, data, { base64: true });
         }
 
-        zip.generateAsync({ type: 'base64' })
-            .then(function (content) {
-                location.href = "data:application/zip;base64," + content;
-                frmReset();
-            });
-
-        toggleButtons();
+        genZip.data?.zipSize > 0 && await genZip(zip, -1).then(frmReset());
     }
+}
+
+async function genZip(zip, size = 0) {
+    zip ??= new JSZip();
+    genZip.data ??= {};
+    let {
+        zipSize= 0,
+        counter= 0,
+        
+    } = genZip.data;
+
+    const
+        maxFileSize = 104857600
+        , endSequence = size < 0;
+
+    zipSize += +size;
+
+    if ((zipSize > maxFileSize) || endSequence) {
+        await zip.generateAsync({ type: 'blob' })
+            .then(function (content) {
+                saveAs(content, `images_${counter}.zip`);
+                zipSize = 0;
+                counter++;                
+                zip = !endSequence && new JSZip()
+            });
+    }
+
+    genZip.data = endSequence ? null: { zipSize, counter };
+    return zip;
 }
 
 function splitFileName(filename) {
@@ -73,7 +102,7 @@ function forceDownload(a, href, filename) {
 };
 
 function fileInput() {
-    setMeter.counter = 0;    
+    setMeter.counter = 0;
     setMeter.max = pipe(
         document.getElementById('inpFile')?.files
         , files => { return files ? files.length : 1 }
@@ -89,10 +118,7 @@ function setPreview(el, file) {
                 img = new Image(),
                 inpH = document.getElementById('inpHeight'),
                 inpW = document.getElementById('inpWidth'),
-                inpS = document.getElementById('inpSize'),
-                inpCt = document.getElementById('counter'),
-                inpCr = document.getElementById('current');
-
+                inpS = document.getElementById('inpSize');
 
             img.onload = function () {
                 setPreview.idle = false;
@@ -112,13 +138,11 @@ function setPreview(el, file) {
                     inpS.value = 100;
                     inpH.value = height;
                     inpW.value = width;
-                    inpCt.value = setMeter.counter + 1;
-                    inpCr.value = file.name;
                 }
 
                 const prevDiv = document.getElementById('previewDiv');
                 prevDiv.textContent = '';
-                prevDiv.appendChild(img);               
+                prevDiv.appendChild(img);
 
                 setPreview.idle = true;
             }
@@ -172,6 +196,7 @@ function frmReset() {
     document.getElementById('frmResize').reset();
     document.getElementById('previewDiv').textContent = '';
     document.getElementById('meter').value = 0;
+    document.getElementById('inpFile').disabled = false;
     toggleButtons(true);
 }
 
