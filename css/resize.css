@@ -16,17 +16,21 @@
     overflow: auto;
 }
 
+h2.headerTitle {
+    font-size: clamp(1.5rem,4vh,2rem);
+}
+
 .meter {
     display: flex;
     margin: 1rem 0;
 }
 
 .col2 {
-    columns: 2 auto;
+    columns: auto 2;
 }
 
 .col3 {
-    columns: 3 auto;
+    columns: auto 3;
 }
 
 .col {
@@ -40,5 +44,5 @@
 
         .col > label > input:not([type="radio"]) {
             width: 100%;
-            max-width:100%;
+            max-width: 100%;
         }
