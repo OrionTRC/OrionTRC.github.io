@@ -132,7 +132,7 @@ A while ago, he picked up a strange looking key. He’s not quite sure what it o
             , details: [
                 { label: 'full name', value: 'Princess Basilissa Regina Barimen of Benedict' }
             ]
-            , download: './assets/files/jen.docx'
+            , download: './assets/files/ac25/jen25.docx'
             , slot: '11-6'
             , gm: 'Scott'
             , stats: [
