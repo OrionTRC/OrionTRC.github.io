@@ -136,10 +136,10 @@ A while ago, he picked up a strange looking key. He’s not quite sure what it o
             , slot: '11-6'
             , gm: 'Scott'
             , stats: [
-                { stat: 'Psyche', value: 20, rank: 'Amber' }
+                { stat: 'Psyche', value: 25, rank: 'Amber' }
                 , { stat: 'Strength', value: 0, rank: 'Amber' }
                 , { stat: 'Endurance', value: 5, rank: 'Amber' }
-                , { stat: 'Warfare', value: 35, rank: 'Amber' }
+                , { stat: 'Warfare', value: 40, rank: 'Amber' }
             ]
             , powers: [
                 Object.assign({}, pattern, { cost: 0, details: 'free from character creation' })
@@ -154,7 +154,7 @@ A while ago, he picked up a strange looking key. He’s not quite sure what it o
                 {
                     name: 'Studded glove'
                     , cost: 6
-                    , qualities: ['deadly damage', 'alternate shapes']
+                    , qualities: ['deadly damage (4)', 'alternate shapes (2)']
                     , quantity: 1
                     , description: 'Glove, Gauntlet, Cestus, Dagger, Rapier, Claymore, Scissors, Pliers, Bolt cutter,  Crowbar, Baseball bat, Necklace'
                 }
@@ -176,7 +176,7 @@ A while ago, he picked up a strange looking key. He’s not quite sure what it o
             , stuff: { type: 'Good', value: 1 }
             , desc: {
                 blurb: `Born to the name of Basilissa (and hating it, obviously), the youngest daughter of Benedict certainly isn’t the son he never had. Jenny isn’t regal, she’s not traditional, she certainly won’t apply herself to the tasks women are usually confined to (to her father’s annoyance), she’s not a really big fan of monarchy, and the only reason she even likes Random is because he’s actually quite fun to hang around with, when he’s not kinging around.  Having been taught Conjuration by Uncle Bleys and Power Words by Uncle Gerard, she makes it a point to get into as much trouble as she can whenever she’s around Amber. Anything to get a rise out of Dad, stoic bugger that he is.`
-                , pic: './assets/img/jen3.png'
+                , pic: './assets/img/ac25/jen25_2.png'
                 , summary: 'Description'
             }
         }
