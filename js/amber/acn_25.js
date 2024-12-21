@@ -105,7 +105,7 @@ export function acn() {
                 {
                     name: 'Excellent suit'
                     , cost: 4
-                    , qualities: ['Impervious armor']
+                    , qualities: ['Impervious armor (4)']
                     , quantity: 1
                     , description: 'Tailor made indestructible edwardian style suit,grey'
                 }
@@ -113,7 +113,7 @@ export function acn() {
                 {
                     name: 'Skeleton key'
                     , cost: 1
-                    , qualities: ['mold shadow stuff']
+                    , qualities: ['mold shadow stuff (1)']
                     , quantity: 1
                     , description: 'An odd looking key that seems to fit and open any mundane lock.'
                 }
@@ -121,7 +121,7 @@ export function acn() {
             , desc: {
                 blurb: `Mister Stranger is a bit of a dreamer, a man of wealth and taste, who likes to think about things. He’s not a fighter, but he does have staying power. He takes great pride in his suit, which was tailor made for him; after all, as the song goes: every girl crazy for a sharp dressed man.
 A while ago, he picked up a strange looking key. He’s not quite sure what it opens, as of yet… but it feels like it will unlock something important.`
-                , pic: './assets/img/alexander.png'
+                , pic: './assets/img/ac24/alexander.png'
                 , summary: 'Description'
             }
         },
@@ -161,14 +161,14 @@ A while ago, he picked up a strange looking key. He’s not quite sure what it o
                 , {
                     name: 'Suitable armor'
                     , cost: 10
-                    , qualities: ['Impervious to Conventional Weapons', 'Limited Shape Shift', 'Danger Sense']
+                    , qualities: ['Impervious to Conventional Weapons (4)', 'Limited Shape Shift (4)', 'Danger Sense (2)']
                     , quantity: 1
                     , description: 'This item takes any shape or form its wearer psychically calls for. It shifts into battle armor form automatically when it senses danger.'
                 }
                 , {
                     name: 'Deck of tricks'
                     , cost: 3
-                    , qualities: ['Mold shadow stuff']
+                    , qualities: ['Mold shadow stuff (1)']
                     , quantity: 52
                     , description: 'Whisper the desired effect and deal the card.'
                 }
