@@ -73,6 +73,10 @@
     width: 100%
 }
 
+.hero div.details-expand pre {
+    white-space: pre-wrap;
+}
+
 .hero summary {
     font-size: clamp(1.2rem,3vh,1.5rem);
 }
