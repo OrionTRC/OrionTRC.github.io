@@ -2,7 +2,7 @@ export function acn() {
     return {
         Duke:
         {
-            name: 'To be determined'
+            name: 'Duke Leopold Panzer'
             , title: 'Politics and pageantry'
             , slot: '6-5'           
             , details: [
@@ -12,7 +12,7 @@ export function acn() {
             , gm: 'Edith'
             , desc: {
                 blurb: `Not a damn clue yet            `
-                , pic: './assets/img/ac25/duke.png'
+                , pic: './assets/img/ac25/Duke.png'
                 , summary: 'Description'
             }
         },
@@ -37,15 +37,19 @@ export function acn() {
             , gm: 'Richard C'
             , desc: {
                 blurb: 'TBD'
-                , pic: './assets/img/ac25/eamon.png'
+                , pic: './assets/img/ac25/Eamon.png'
                 , summary:'Story'
-            }
-            , powers: []
-            , stats: []
-            , items: []
-            , stuff: {}
+            }            
+            , stats: [
+                { stat: 'Psyche', value: 2, rank: 'Amber' }
+                , { stat: 'Endurance', value: 20, rank: 'Amber' }
+                , { stat: 'Strength', value: 15, rank: 'Amber' }
+                , { stat: 'Warfare', value: 10, rank: 'Amber' }
+            ]
+            //, items: []
+            //, stuff: {}
             , download: 'assets/img/ac25/eamon.docx'
-            , details:[]
+            //, details:[]
         },
         unknown_1: {
             name: 'tbd'
