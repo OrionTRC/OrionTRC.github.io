@@ -36,13 +36,11 @@ export function acn() {
             , slot: '8-5'
             , gm: 'Richard C'
             , desc: {
-                blurb: `When Lady Alicia was seduced by king Oberon, she naively expected him to make her his next adoring queen… Turns out she was sorely mistaken. He stole her away to a castle in the country to bear his child, and when the boy was born, he went out of his way to declare him a baron, NOT a prince, and refused to acknowledge him as anything but a royal bastard. This way, the line of succession was secured, just in case things the kingdom would not weather the oncoming storm: Eamon is in line for the throne, but he’s dead last. 
-He named the boy with an anagram for “Anagram of Oberon”, a name he knew would trouble him, just so he’d grow up angry enough to make his own way in life.
-Fourteen years later, with Oberon dead, so too have passed Lady Alicia’s dreams of one day returning to the court.She remains in Fargo Keep, reminiscing about the days of yore, and glory that passed her by.
+                blurb: `When Lady Alicia was seduced by king Oberon, she naively expected him to make her his next adoring queen… Turns out she was sorely mistaken. He stole her away to a castle in the country to bear his child, and when the boy was born, he went out of his way to declare him a baron, NOT a prince, and refused to acknowledge him as anything but a royal bastard. This way, the line of succession was secured, just in case things the kingdom would not weather the oncoming storm: Eamon is in line for the throne, but he’s dead last. He named the boy with an anagram for “Anagram of Oberon”, a name he knew would trouble him, just so he’d grow up angry enough to make his own way in life. Fourteen years later, with Oberon dead, so too have passed Lady Alicia’s dreams of one day returning to the court.She remains in Fargo Keep, reminiscing about the days of yore, and glory that passed her by.
 
 And what of the boy?
-Baron Eamon Fargo is a moody, brooding boy.He likes to lose himself in books when he can, as it takes him away from the realities of the politics around him, but what he really loves to do is run.He can run for hours, off the beaten path in the forests around the castle, where no one can find him and he can be alone.Away from all the stupid grownups with their stupid political agendas, away from his mother who keeps reminding him how great he could have been, away from the threats that come with being a son of Oberon now that he’s gone… he never asked for any of that.And so, he runs.
-                    It’s a blissful thing for him, to run.To have a cadence in his step, to see the world fly by, with no one who keeps up with him, no one who doesn’t understand, no one who tries take make him do stuff or be stuff, just him, by himself. If only running could also mean running away.`
+Baron Eamon Fargo is a moody, brooding boy.He likes to lose himself in books when he can, as it takes him away from the realities of the politics around him, but what he really loves to do is run.He can run for hours, off the beaten path in the forests around the castle, where no one can find him and he can be alone.Away from all the stupid grownups with their stupid political agendas, away from his mother who keeps reminding him how great he could have been, away from the threats that come with being a son of Oberon now that he’s gone… he never asked for any of that.And so, he runs. 
+It’s a blissful thing for him, to run.To have a cadence in his step, to see the world fly by, with no one who keeps up with him, no one who doesn’t understand, no one who tries take make him do stuff or be stuff, just him, by himself. If only running could also mean running away.`
                 , pic: './assets/img/ac25/Eamon.png'
                 , summary: 'Story'
             }
@@ -58,7 +56,8 @@ Baron Eamon Fargo is a moody, brooding boy.He likes to lose himself in books whe
                     , cost: 4
                     , qualities: ['psychic sensitive (1)','alternate shapes(2)', 'Extra hard (1)']
                     , quantity: 1
-                    , description: '(invisible) ring, hatchet, hunting knife, sparkrod and striker, skillet, compass, hook and line, collapsible spade, mocha coffee pot, arming sword, cestus'
+                    , description: `The baronial signet ring, which turns invisible as soon as it's worn. It makes Eamon uncomfortable if he ever introduces himself without mentioning his full name and title. 
+                    Shapes: (invisible) ring, hatchet, hunting knife, sparkrod and striker, skillet, compass, hook and line, collapsible spade, mocha coffee pot, arming sword, cestus`
                 }
             ]
             , stuff: { type: 'Bad', value: 1 }
