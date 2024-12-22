@@ -33,6 +33,12 @@ h2.headerTitle {
     columns: auto 3;
 }
 
+.btnGrid {
+    display: grid;
+    grid:auto/repeat(auto-fit,minmax(5em,1fr));
+    gap: 1rem;
+}
+
 .col {
     gap: 1rem;
 }
