@@ -95,13 +95,13 @@ It’s a blissful thing for him, to run.To have a cadence in his step, to see th
         {
             name: 'Alexander Stranger'
             , title: 'A brand new world'
-            , download: './assets/files/Alexander_Stranger.docx'
+            , download: './assets/files/ac25/Alexander_Stranger25.docx'
             , slot: '10-3'
             , gm: 'Paul J'
             , stats: [
-                { stat: 'Psyche', value: 25, rank: 'Amber' }
-                , { stat: 'Endurance', value: 15, rank: 'Amber' }
-                , { stat: 'Strength', value: 5, rank: 'Amber' }
+                { stat: 'Psyche', value: 35, rank: 'Amber' }
+                , { stat: 'Endurance', value: 25, rank: 'Amber' }
+                , { stat: 'Strength', value: 10, rank: 'Amber' }
                 , { stat: 'Warfare', value: -10, rank: 'Chaos' }
             ]
             , powers: [
@@ -148,7 +148,7 @@ It’s a blissful thing for him, to run.To have a cadence in his step, to see th
             , desc: {
                 blurb: `Mister Stranger is a bit of a dreamer, a man of wealth and taste, who likes to think about things. He’s not a fighter, but he does have staying power. He takes great pride in his suit, which was tailor made for him; after all, as the song goes: every girl crazy for a sharp dressed man.
 A while ago, he picked up a strange looking key. He’s not quite sure what it opens, as of yet… but it feels like it will unlock something important.`
-                , pic: './assets/img/ac24/alexander.png'
+                , pic: './assets/img/ac25/alex25.png'
                 , summary: 'Description'
             }
         },
