@@ -6,12 +6,34 @@ export function acn() {
             , title: 'Politics and pageantry'
             , slot: '6-5'
             , details: [
-                { label: 'entourage', value: 'Dybele' }
+                { label: 'birth name', value: '(unpronounceable growling roar)' }
+                , { label: 'title', value: 'Duke of Fieras' }
+                , { label: 'race', value: 'Mrrshan' }
+                , { label: 'entourage', value: 'Dybele’s Intergalactic Empire' }
+                , { label: 'role (official)', value: 'Emissary on behalf of the Mrrshan to the courts' }
+                , { label: 'role (unoffical)', value: 'Military advisor' }
+                , { label: 'motivation', value: 'The empire can not fall, lest the Mrrshan will fall to civil war' }
+
+            ]
+            , skills: [
+                { skill: 'Melêe Combat', value: 'As an 8ft tall murder cat and warlord: excellent' }
+                , { skill: 'Military tactics/ strategy', value: 'Military advisor to the throne' }
+                , { skill: 'Heightened sense of smell', value: 'Apex predator' }
+                , { skill: 'Human interaction', value: 'struggling' }
+                , { skill: 'Physical integration', value: 'nothing is my size.' }
             ]
             , download: './assets/files/ac25/duke.docx'
             , gm: 'Edith'
             , desc: {
-                blurb: `Not a damn clue yet`
+                blurb: `Duke Panzer is an 8 foot tall (2.50m) anthropomorphic panther from a feudal, feral, high gravity jungle world. His name is a bit of a joke; his real name is unpronounceable to humans (sounding something like a growling roar), but due to his appearance and his size (built like a tank), he was named Leopold Panzer by a courtier and the name stuck. The courtier himself did not stick around, though, not after the Duke found out about the joke.
+
+Panzer was a Duke on Fieras, his home world, a high ranking warlord who had the ear of the Lion throne itself. That is… until Dybele and her humans came. At first, they seemed no threat at all. After all, humans are squishy compared to a Mrrshan. They’re small, hairless, weak, have no claws or teeth to speak of, and they break easily. Only… they don’t die easily. And they won’t stop coming. No matter how many battles the Mrrshan won, the humans would return in greater numbers. No matter how long the battle lasted, the humans kept going. No matter how devastating the victory, the humans never sounded defeat… How do you win against an enemy who just won’t lose? In the end, it was Panzer who had to suggest to the Lion throne that this war could not be won, and that the only way he saw for his people to survive was to capitulate and join the Intergalactic Empire. His shame was unrivalled: never had the Mrrshan ever ceded a battle, let alone surrendered. It was the highest dishonour, and for his shame, Panzer was exiled from Fieras, to join the humans he had elevated above his people as the Mrrshan emissary. He can never go home.
+                
+Given the current negotiations, the Duke has some concerns:
+o	Dybele doesn’t react well to being told “no”. She is used to wielding ultimate power, and to have someone oppose her, and oppose her so forcefully, it’s bound to lead her to make mistakes, be it out of pride, anger, or even insecurity.
+o	Oberon’s forces are completely alien to theirs, and the cultural mismatch will prove difficult to manage.
+o	There are always those looking to benefit from Chaos. There might be those who wish to dethrone or supplant Dybele, those who are out for revenge, those who think that the war could end by assassinating either or both of the monarchs, those who think they’ll profit from the extension of the war…. Everyone is suspect.
+`
                 , pic: './assets/img/ac25/Duke.png'
                 , summary: 'Description'
             }
@@ -54,7 +76,7 @@ It’s a blissful thing for him, to run.To have a cadence in his step, to see th
                 {
                     name: 'Signet Ring'
                     , cost: 4
-                    , qualities: ['psychic sensitive (1)','alternate shapes(2)', 'Extra hard (1)']
+                    , qualities: ['psychic sensitive (1)', 'alternate shapes(2)', 'Extra hard (1)']
                     , quantity: 1
                     , description: `The baronial signet ring, which turns invisible as soon as it's worn. It makes Eamon uncomfortable if he ever introduces himself without mentioning his full name and title. 
                     Shapes: (invisible) ring, hatchet, hunting knife, sparkrod and striker, skillet, compass, hook and line, collapsible spade, mocha coffee pot, arming sword, cestus`
