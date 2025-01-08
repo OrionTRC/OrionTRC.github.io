@@ -145,10 +145,14 @@
     column-gap: 1rem;
     column-rule: 1px solid var(--hero-fc);   
 }
-    .hero ul.col-list li:nth-child(n+2 of li:not(.hero-reverse)) > * {
+    .hero ul.col-list li > * {
         display: block;
-        break-inside: avoid;
-        border-top: 1px solid var(--hero-fc);
+        break-inside: avoid;      
+        word-wrap: break-word;
+    }
+
+    .hero ul.col-list li:nth-child(n+2 of li:not(.hero-reverse)) > * {      
+        border-top: 1px solid var(--hero-fc);        
     } 
 
 .char-picture {
