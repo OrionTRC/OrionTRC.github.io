@@ -148,20 +148,8 @@
     .hero ul.col-list li > * {
         display: block;
         break-inside: avoid;
-        border-bottom: 1px solid var(--hero-fc);
+        border-top: 1px solid var(--hero-fc);
     } 
-
-
-.hero ul.grid-list li {
-    display: grid;
-    grid-template-columns: minmax(auto,1fr) auto;
-}
-
-    .hero ul.grid-list li:not(.hero-reverse) {
-        display: grid;
-        grid-template-columns: minmax(auto,1fr) auto;
-        border-bottom: 1px solid var(--hero-fc);
-    }
 
 .char-picture {
     width: 100%;
