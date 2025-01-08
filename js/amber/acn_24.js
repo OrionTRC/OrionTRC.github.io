@@ -209,15 +209,15 @@ export function acn() {
                 , { name: ' Adamantium bones', details: 'inherent from Endurance' }
             ]
             , skills: [
-                { skill: 'Combat(Eastern Martial Arts)', value: 'Superb' }
+                { skill: 'Combat (Eastern Martial Arts)', value: 'Superb' }
                 , { skill: 'Knowledge(Ancient Languages)', value: 'Superb' }
                 , { skill: 'Physics', value: 'Superb' }
                 , { skill: 'Acrobatics', value: 'Great' }
                 , { skill: 'Chemistry', value: 'Great' }
-                , { skill: 'Culture(Edwardiana)', value: 'Great' }
+                , { skill: 'Culture (Edwardiana)', value: 'Great' }
                 , { skill: 'Disguise', value: 'Great' }
-                , { skill: 'History(Ancient Edwardiana)', value: 'Great' }
-                , { skill: 'Knowledge(Mythology)', value: 'Great' }
+                , { skill: 'History (Ancient Edwardiana)', value: 'Great' }
+                , { skill: 'Knowledge (Mythology)', value: 'Great' }
                 , { skill: 'Lying and Deceit', value: 'Great' }
                 , { skill: 'Persuasion', value: 'Great' }
                 , { skill: 'Speak Ancient Greek', value: 'Great' }
@@ -227,12 +227,12 @@ export function acn() {
                 , { skill: 'Speak Latin', value: 'Great' }
                 , { skill: 'Speak Māori', value: 'Great' }
                 , { skill: 'Combat(Archery)', value: 'Good' }
-                , { skill: 'Dance(Ballroom)', value: 'Good' }
-                , { skill: 'Driving(car, small medium van)', value: 'Good' }
-                , { skill: 'Engineering(Mechanical)', value: 'Good' }
+                , { skill: 'Dance (Ballroom)', value: 'Good' }
+                , { skill: 'Driving (car, small medium van)', value: 'Good' }
+                , { skill: 'Engineering (Mechanical)', value: 'Good' }
                 , { skill: 'Mathematics', value: 'Good' }
-                , { skill: 'Medical(First Aid)', value: 'Good' }
-                , { skill: 'Medical(General Practitioner)', value: 'Good' }
+                , { skill: 'Medical (First Aid)', value: 'Good' }
+                , { skill: 'Medical (General Practitioner)', value: 'Good' }
                 , { skill: 'Philosophy', value: 'Good' }
                 , { skill: 'Read / Write Ancient Greek', value: 'Good' }
                 , { skill: 'Read / Write English', value: 'Good' }
@@ -243,7 +243,7 @@ export function acn() {
                 , { skill: 'Seduction', value: 'Good' }
                 , { skill: 'Sexuality', value: 'Good' }
                 , { skill: 'Swimming', value: 'Bad' }
-                , { skill: 'Riding(horse)', value: 'Horrible' }
+                , { skill: 'Riding (horse)', value: 'Horrible' }
             ]
             , desc: {
                 blurb: `The famous scientist, miss Alicia Lang, pioneer on the fields of uncanny science and unrelenting progress. A most charming and elegant young lady of merely 27 years old, she's an exemplar of the values of proper education.
