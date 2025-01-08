@@ -112,7 +112,7 @@ header h1 {
     background-color: var(--fc-color);
     color: var(--bg-color);
     border: 1px solid var(--bg-color);
-    transform: scale(1.1);
+    transform: scale(1.2);
     backdrop-filter: none;
 }
 
