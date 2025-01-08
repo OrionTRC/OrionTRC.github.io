@@ -79,7 +79,7 @@ It’s a blissful thing for him, to run.To have a cadence in his step, to see th
                     , qualities: ['psychic sensitive (1)', 'alternate shapes(2)', 'Extra hard (1)']
                     , quantity: 1
                     , description: `The baronial signet ring, which turns invisible as soon as it's worn. It makes Eamon uncomfortable if he ever introduces himself without mentioning his full name and title. 
-                    Shapes: (invisible) ring, hatchet, hunting knife, sparkrod and striker, skillet, compass, hook and line, collapsible spade, mocha coffee pot, arming sword, cestus`
+                    Shapes: (invisible) ring, hatchet, hunting knife, sparkrod and striker, skillet, compass, hook and line, collapsible spade, moka coffee pot, arming sword, cestus`
                 }
             ]
             , stuff: { type: 'Bad', value: 1 }
@@ -97,21 +97,49 @@ It’s a blissful thing for him, to run.To have a cadence in his step, to see th
             ]
         },
         unknown_1: {
-            name: 'tbd'
+            name: `Sam o'Hara`
             , title: 'Deadlier than the  ...'
             , slot: '9-1'
             , gm: 'Pete M'
             , desc: {
-                blurb: 'TBD'
-                , pic: './assets/img/ac25/unknown.png'
-                , summary: 'Story'
+                blurb: 'used to work for a consortia of criminal groups, but is currently in dispute with them. Supposedly they have hired the Baba Yaga to resolve this situation. Currently on the run.'
+                , pic: './assets/img/ac25/Sam.webp'
+                , summary: 'Description'
             }
-            , powers: []
-            , stats: []
-            , items: []
-            , stuff: {}
-            , download: 'assets/img/ac25/unknown.docx'
-            , details: []
+            , powers: [
+                {
+                    name: 'Shadow Mask'
+                    , details: 'pull a shadow down from the brim of his hat or up from beneath your collar and wrap it around your head, rendering you completely unrecognizable to human eyes or electronic surveillance equipment (even equipment designed specifically to see in darkness). Your voice becomes an unidentifiable whisper. You can see through this mask, and some other people can recognize you through it. The shadow mask lasts for a maximum of 1 scene. You can will it to disperse before that period elapses, but otherwise, it remains in place the whole time even if you are unconscious.Useable 3 times in the session'
+                }
+            ]
+            , stats: [
+                { stat: 'Psyche', value: 10, rank: 'Superhuman' }
+                , { stat: 'Endurance', value: 12, rank: 'Superhuman' }
+                , { stat: 'Strength', value: 14, rank: 'Superhuman' }
+                , { stat: 'Warfare', value: 14, rank: 'Superhuman' }
+                , { stat: 'Presence', value: 13, rank: 'Superhuman' }
+            ]
+            , items: [
+                {
+                    name: 'tools of the trade'
+                    , description: 'Large bag of guns'
+                }
+            ]
+            , skills: [
+                { skill: 'melee', value: 'unarmed, knife, club' }
+                , { skill: 'firearms', value: 'all small arms' }
+                , { skill: 'other skills', value: 'stealth, mechanic' }
+                , { skill: 'education', value: 'high school and experience' }
+                , { skill: 'linguistics', value: 'English, Italian, Russian, Korean' }
+            ]
+            , stuff: { type: 'Good', value: 2 }
+            , download: 'assets/files/ac25/sam.docx'
+            , details: [
+                { label: 'name', value: `Samantha o'Hara` }
+                , { label: 'age', value: 24 }
+                , { label: 'occupation', value: 'former mob assassin' }
+                , { label: 'current occupation', value: 'on the run' }
+            ]
         },
         alexander:
         {
