@@ -40,17 +40,41 @@ o	There are always those looking to benefit from Chaos. There might be those who
         },
         Jake:
         {
-            name: 'Jake ...something'
+            name: 'Jake Gallo'
             , title: 'Frat House Freak-out'
-            , details: []
-            , download: './assets/files/ac25/jake.docx'
+            , details: [
+                { label: 'age', value: 23 }
+                , { label: 'current major', value: 'Art, Culture and Media' }
+            ]
+            , download: './assets/files/ac25/Jake.docx'
             , slot: '7-4'
             , gm: 'Tym'
             , desc: {
-                blurb: `TBD`
+                blurb: `At the age of 23, you’d think Jake would be closer to finishing his studies than he’d be to starting them, but he’s jumped majors again. He started in Social Studies, then switched to Psychology, and now he’s trying his hand at Art, Culture and Media. And why? Well…. His late uncle left him a handsome stipend to absolutely not graduate, ever. He hadn’t intended to, of course. The poor man thought he’d be helping his nephew through university, but the setup was that as long as Jake did well enough and wasn’t expelled, he’d receive a sum from a trust fund each year that would enable him to live quite comfortably. Said arrangement would end as soon as he graduated, however, since his uncle imagined Jake should be able to make his own way in life from then on. The rest of the trust fund was destined to go to his uncle’s church. 
+Jake never went to church, and even if he had, he didn’t particularly think his uncle’s church really needed all that money. So, he resolved to stay in University indefinitely, or at least as long as he could possibly manage.
+
+Jake comes across as a bit of an airheaded dreamer, which is an image he carefully crafted so people wouldn’t question why he keeps switching majors... “That’s just how it is, you know. Gotta go where the wind takes you, man. Don’t get stuck in the grind, or it’ll grind you down”. Appearances notwithstanding, he does actually work hard at his studies; it’d be unfair to his uncle if he wouldn’t, and besides, if he were to find himself failed out of or expelled from the university, there went his trust fund too.  For the same reason, he keeps himself in good shape: a healthy body is a healthy mind, after all. People who don’t know him would be surprised how his lanky appearance hid a runner’s physique.
+In the evenings, Jake supplements his income by playing poker, once again aided by his appearances… no one expects the hippie to take home more than he came in with. He makes sure never to win too much, though, as he imagines life is easier without enemies. 
+`
                 , summary: 'Description'
-                , pic: './assets/img/ac25/jake.png'
+                , pic: './assets/img/ac25/Jake.webp'
             }
+            , stats: [
+                { stat: 'Psyche', value: 5, rank: 'Chaos +' }
+                , { stat: 'Endurance', value: -5, rank: 'Chaos -' }
+                , { stat: 'Strength', value: 3, rank: 'Chaos +' }
+                , { stat: 'Warfare', value: -10, rank: 'Chaos -' }
+                , { stat: 'Wealth', value: 1, rank: '' }
+                , { stat: 'Luck', value: 2, rank: '' }
+            ]
+            , powers: [
+                {
+                    name: 'Power words'
+                    , type: 'Defensive Luck, Process surge'
+                    , cost: 4
+                    , details: 'Defensive Luck invoked by going “Fuck” intensely, Process surge by thumping something hard (Like Fonzie could)'
+                }
+            ]
         },
         baron: {
             name: 'Baron Eamon Fargo'
