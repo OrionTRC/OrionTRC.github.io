@@ -3,7 +3,7 @@ function fotomodel(photolist) {
 
     self.zipArray = ko.observableArray();
     for (let i = 1; i < 11; i++) {
-        self.zipArray.push({ photo: `assets/zip/Huwelijkskaarten${i}.zip`, title: `Huwelijkskaarten ${i}` });
+        self.zipArray.push({ photo: `../assets/zip/Huwelijkskaarten${i}.zip`, title: `Huwelijkskaarten ${i}` });
     }
 
     const lostNumbers = [4, 6, 8, 11, 22, 31, 36, 37];
@@ -18,8 +18,8 @@ function fotomodel(photolist) {
     function makeThumbnail(i) {
         return new Promise((resolve, reject) => {
             const
-                href = `assets/photos/${i}.jpg`
-                , dataUrl = `assets/thumbs/tmb_${i}.jpg`
+                href = `../assets/photos/${i}.jpg`
+                , dataUrl = `../assets/thumbs/tmb_${i}.jpg`
                 , li = add(photolist, 'li')
                 , photo = add(li, 'a', {
                     href
@@ -27,7 +27,7 @@ function fotomodel(photolist) {
                     , download: `${i}`
                 });
 
-            photo.style.backgroundImage = `url(./${dataUrl})`;
+            photo.style.backgroundImage = `url(${dataUrl})`;
             resolve(li);
         });
     }

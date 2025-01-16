@@ -1,0 +1,87 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/reset.css" media="screen">
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <link rel="stylesheet" href="../css/resize.css" media="screen">
+
+    <title>Thom's Kasteel image resize</title>
+</head>
+
+<body>
+    <div id="bodyCover" style="--bg-pic:url('../assets/img/mainBG.png');">
+        <header id="header">
+            <h1> <a href="../index.html">Thom's Kasteel</a> </h1>
+        </header>
+        <main>
+            <menu></menu>
+            <section>
+                <h2 class="headerTitle">Image resizer</h2>
+                <form id="frmResize" class="frmResize" method="post" autocomplete="off" onsubmit="return false;">
+                    <div class="col">
+                        <label>
+                            input images<br />
+                            <input type="file" name="inpFile" id="inpFile" accept="image/*" multiple onchange="fileInput()" />
+                        </label>
+                    </div>
+                    <div class="col col2">
+                        <label>
+                            current image <br>
+                            <input type="text" disabled id="current">
+                        </label>
+                        <label>
+                            now serving <br>
+                            <input type="text" disabled id="counter">
+                        </label>
+                    </div>
+
+                    <div class="meter">
+                        <meter id="meter" value="0"></meter>
+                    </div>
+
+                    <div class="col col3">
+                        <label for="inpHeightChoice">
+                            <input type="radio" name="inpChoice" id="inpHeightChoice" value="height">
+                            height<br>
+                            <input type="number" name="inpHeight" id="inpHeight" min="1" onfocus="fncFocus(this)"
+                                   onchange="setPreview(this)" onblur="setPreview(this)">
+                        </label>
+                        <label for="inpWidthChoice">
+                            <input type="radio" name="inpChoice" id="inpWidthChoice" value="width">
+                            width<br>
+                            <input type="number" name="inpWidth" id="inpWidth" min="1" onfocus="fncFocus(this)"
+                                   onchange="setPreview(this)" onblur="setPreview(this)">
+                        </label>
+                        <label for="inpSizeChoice">
+                            <input type="radio" name="inpChoice" id="inpSizeChoice" value="size">
+                            size % <br>
+                            <input type="number" name="inpSize" id="inpSize" min="1" onfocus="fncFocus(this)"
+                                   onchange="setPreview(this)" onblur="setPreview(this)" checked>
+                        </label>
+                    </div>
+                    <br>
+                    <div id="btns" class="btnGrid">
+                        <button type="button" disabled onclick="downloadSingle()">Save current image</button>
+                        <button type="button" disabled onclick="downloadZip()">Edit and Save all (as zip)</button>
+                        <button type="reset" onclick="frmReset()">clear</button>
+                    </div>
+
+                </form>
+                <div class="preview" id="previewDiv"></div>
+            </section>
+
+            <aside></aside>
+        </main>
+    </div>
+
+    <script src="../js/lib/jszip.min.js"></script>
+    <script src="../js/lib/FileSaver.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/resize.js"></script>
+</body>
+
+</html>
