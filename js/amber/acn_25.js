@@ -1,4 +1,8 @@
 export function acn() {
+    const
+        img = '../assets/files/ac25'
+        , file = '../assets/files/ac25';
+
     return {
         Duke:
         {
@@ -22,7 +26,7 @@ export function acn() {
                 , { skill: 'Human interaction', value: 'struggling' }
                 , { skill: 'Physical integration', value: 'nothing is my size.' }
             ]
-            , download: './assets/files/ac25/duke.docx'
+            , download: `${file}/duke.docx`
             , gm: 'Edith'
             , desc: {
                 blurb: `Duke Panzer is an 8 foot tall (2.50m) anthropomorphic panther from a feudal, feral, high gravity jungle world. His name is a bit of a joke; his real name is unpronounceable to humans (sounding something like a growling roar), but due to his appearance and his size (built like a tank), he was named Leopold Panzer by a courtier and the name stuck. The courtier himself did not stick around, though, not after the Duke found out about the joke.
@@ -34,7 +38,7 @@ o	Dybele doesn’t react well to being told “no”. She is used to wielding ul
 o	Oberon’s forces are completely alien to theirs, and the cultural mismatch will prove difficult to manage.
 o	There are always those looking to benefit from Chaos. There might be those who wish to dethrone or supplant Dybele, those who are out for revenge, those who think that the war could end by assassinating either or both of the monarchs, those who think they’ll profit from the extension of the war…. Everyone is suspect.
 `
-                , pic: './assets/img/ac25/Duke.png'
+                , pic: `${img}/Duke.png`
                 , summary: 'Description'
             }
         },
@@ -46,7 +50,7 @@ o	There are always those looking to benefit from Chaos. There might be those who
                 { label: 'age', value: 23 }
                 , { label: 'current major', value: 'Art, Culture and Media' }
             ]
-            , download: './assets/files/ac25/Jake.docx'
+            , download: `${file}/Jake.docx`
             , slot: '7-4'
             , gm: 'Tym'
             , desc: {
@@ -57,7 +61,7 @@ Jake comes across as a bit of an airheaded dreamer, which is an image he careful
 In the evenings, Jake supplements his income by playing poker, once again aided by his appearances… no one expects the hippie to take home more than he came in with. He makes sure never to win too much, though, as he imagines life is easier without enemies. 
 `
                 , summary: 'Description'
-                , pic: './assets/img/ac25/Jake.webp'
+                , pic: `${img}/Jake.webp`
             }
             , stats: [
                 { stat: 'Psyche', value: 5, rank: 'Chaos +' }
@@ -87,7 +91,7 @@ In the evenings, Jake supplements his income by playing poker, once again aided 
 And what of the boy?
 Baron Eamon Fargo is a moody, brooding boy.He likes to lose himself in books when he can, as it takes him away from the realities of the politics around him, but what he really loves to do is run.He can run for hours, off the beaten path in the forests around the castle, where no one can find him and he can be alone.Away from all the stupid grownups with their stupid political agendas, away from his mother who keeps reminding him how great he could have been, away from the threats that come with being a son of Oberon now that he’s gone… he never asked for any of that.And so, he runs. 
 It’s a blissful thing for him, to run.To have a cadence in his step, to see the world fly by, with no one who keeps up with him, no one who doesn’t understand, no one who tries take make him do stuff or be stuff, just him, by himself. If only running could also mean running away.`
-                , pic: './assets/img/ac25/Eamon.png'
+                , pic: `${img}/Eamon.png`
                 , summary: 'Story'
             }
             , stats: [
@@ -127,7 +131,7 @@ It’s a blissful thing for him, to run.To have a cadence in his step, to see th
             , gm: 'Pete M'
             , desc: {
                 blurb: 'used to work for a consortia of criminal groups, but is currently in dispute with them. Supposedly they have hired the Baba Yaga to resolve this situation. Currently on the run.'
-                , pic: './assets/img/ac25/Sam.webp'
+                , pic: `${img}/Sam.webp`
                 , summary: 'Description'
             }
             , powers: [
@@ -169,7 +173,7 @@ It’s a blissful thing for him, to run.To have a cadence in his step, to see th
         {
             name: 'Alexander Stranger'
             , title: 'A brand new world'
-            , download: './assets/files/ac25/Alexander_Stranger25.docx'
+            , download: `${file}/Alexander_Stranger25.docx`
             , slot: '10-3'
             , gm: 'Paul J'
             , stats: [
@@ -222,7 +226,7 @@ It’s a blissful thing for him, to run.To have a cadence in his step, to see th
             , desc: {
                 blurb: `Mister Stranger is a bit of a dreamer, a man of wealth and taste, who likes to think about things. He’s not a fighter, but he does have staying power. He takes great pride in his suit, which was tailor made for him; after all, as the song goes: every girl crazy for a sharp dressed man.
 A while ago, he picked up a strange looking key. He’s not quite sure what it opens, as of yet… but it feels like it will unlock something important.`
-                , pic: './assets/img/ac25/alex25.png'
+                , pic: `${img}/alex25.png`
                 , summary: 'Description'
             }
         },
@@ -233,7 +237,7 @@ A while ago, he picked up a strange looking key. He’s not quite sure what it o
             , details: [
                 { label: 'full name', value: 'Princess Basilissa Regina Barimen of Benedict' }
             ]
-            , download: './assets/files/ac25/jen25.docx'
+            , download: `${file}/jen25.docx`
             , slot: '11-6'
             , gm: 'Scott'
             , stats: [
@@ -284,7 +288,7 @@ After the last outing with her frenemy Princess Mireille things turned sour fast
 In the meantime, a lot of damage had been done. 
 Jenn had gotten herself detained, then exiled. Sure, Random probably hadn’t meant it that way, but since she had formally come before him to turn herself in for quote unquote “laying hands on the Princess”, she chose to take his actions as formally as she should. After all, it was serious business. She received a thinly veiled pardon later on, which tried to indicate her exile was in error, but she had chosen to stay away from the Court nonetheless. Instead, she had returned to hated Rebma. Despite Queen Yvain’s orders never to return, she had to try and use her magic to help with rebuilding all that had been lost in the time spent fighting Mireille, instead of saving the city from ruin. After all, someone had to take responsibility for what had happened… 
 `
-                , pic: './assets/img/ac25/jen25_2.png'
+                , pic: `${img}/jen25_2.png`
                 , summary: 'Story'
             }
         }

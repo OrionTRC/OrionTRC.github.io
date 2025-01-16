@@ -1,4 +1,8 @@
 export function acn() {
+    const
+        img = '../assets/img/ac24'
+        , file = '../assets/files/ac24';
+
     return {
         tallman:
         {
@@ -28,7 +32,7 @@ export function acn() {
             , details: [
                 { label: 'former name', value: 'Jebediah Morningside' }
             ]
-            , download: './assets/files/tallman.docx'
+            , download: `${file}/tallman.docx`
             , gm: 'Vivek'
             , desc: {
                 blurb: `Jebediah Morningside was an 19th century mortician who was absolutely fascinated by the concept of life after death. He was so enthralled by the idea that he actually invented and constructed a machine capable of creating a portal to the world beyond, and after activating it, he went through.
@@ -40,7 +44,7 @@ export function acn() {
             In this world, the Ministry would have quickly put a stop to the tall man, utilizing its own array of the strange and the weird… and for what? The dead and buried? No one would know if a grave was empty, excepting those few times a grave needs to be exhumed. A Burke or Hare is easily found to play the role of scapegoat in those cases (and have been). As such, it suits the tall man to align itself to the whims and whiles of the Ministry on occasion, in return for the right to rob graves in relative peace. It’s not like its masters are using him to create up an invading force to take over this reality and beyond using our own deceased, is it?
             Or is it? 
             `
-                , pic: './assets/img/ac24/tallman.png'
+                , pic: `${img}/tallman.png`
                 , summary: 'Story'
             }
         },
@@ -60,7 +64,7 @@ export function acn() {
                 , { label: "\u2727", value: 'Powerful physique' }
                 , { label: "\u2727", value: 'Better with animals than with people' }
             ]
-            , download: './assets/files/carl.docx'
+            , download: `${file}/carl.docx`
             , slot: '6-3'
             , gm: 'Matthew'
             , desc: {
@@ -90,7 +94,7 @@ export function acn() {
             It’d never happen, I know. Who am I to raise a hand to a Prince? I’m just a lowly stable hand. It’s not my place. It’s nice to dream, though.
             It’s nice to dream.”`
                 , summary: 'Story'
-                , pic: './assets/img/ac24/carl.png'
+                , pic: `${img}/carl.png`
             }
         },
         jen:
@@ -100,7 +104,7 @@ export function acn() {
             , details: [
                 { label: 'full name', value: 'Princess Basilissa Regina Barimen of Benedict' }
             ]
-            , download: './assets/files/jen.docx'
+            , download: `${file}/jen.docx`
             , slot: '9-5'
             , gm: 'Scott'
             , stats: [
@@ -144,7 +148,7 @@ export function acn() {
             , stuff: { type: 'Good', value: 1 }
             , desc: {
                 blurb: `Born to the name of Basilissa (and hating it, obviously), the youngest daughter of Benedict certainly isn’t the son he never had. Jenny isn’t regal, she’s not traditional, she certainly won’t apply herself to the tasks women are usually confined to (to her father’s annoyance), she’s not a really big fan of monarchy, and the only reason she even likes Random is because he’s actually quite fun to hang around with, when he’s not kinging around.  Having been taught Conjuration by Uncle Bleys and Power Words by Uncle Gerard, she makes it a point to get into as much trouble as she can whenever she’s around Amber. Anything to get a rise out of Dad, stoic bugger that he is.`
-                , pic: './assets/img/ac24/jen3.png'
+                , pic: `${img}/jen3.png`
                 , summary: 'Description'
             }
         },
@@ -156,7 +160,7 @@ export function acn() {
                 { label: 'full name', value: 'Renegade "Reno" Turner' }
                 , { label: 'Lineage', value: 'Florimel' }
             ]
-            , download: './assets/files/reno.docx'
+            , download: `${file}/reno.docx`
             , slot: '8-1'
             , gm: 'Stephen Quick'
             , stats: [
@@ -178,7 +182,7 @@ export function acn() {
             , stuff: { type: 'Bad', value: -1 }
             , desc: {
                 blurb: `Renegade “Reno” Turner is a son of Florimel. Ironically named, Flora had him trained to be dashing, devious, strong and ruthless. Knowing full well that she needed people to be enforcers at times, she utilizes him to scout out situations and ‘ deal’ with anything unsavory, which in turn keeps her hands clean. And if things go south, well, she’ll claim she had “nothing to do with whatever that silly boy is up to… it’s in the name, isn’t it?” \nSuffice to say Reno doesn’t like his mother very much. He’s acutely aware of the power she holds over him, though, so he dare not oppose her … yet.`
-                , pic: './assets/img/ac24/reno.png'
+                , pic: `${img}/reno.png`
                 , summary: 'Description'
             }
         },
@@ -193,7 +197,7 @@ export function acn() {
                 , { label: 'age', value: '27 (333)' }
                 , { label: 'mother', value: 'Jehoel' }
             ]
-            , download: './assets/files/Alicia.pdf'
+            , download: `${file}/Alicia.pdf`
             , slot: '10-3'
             , gm: 'Tim H'
             , stats: [
@@ -250,7 +254,7 @@ export function acn() {
             In actuality, Alicia's real name is Zophasemin, Sophia for short, and she was born a Grigori in the year 1579, making her over 3 centuries old in the current day and age. Her mother, Jehoel, left her to be raised with the Maori of New Zealand, after which she traveled far and wide, under many a name and face.
             Having fallen in love with mankind, Sophia now strives to better their understanding of science and technology, hoping that the pursuit of progress will eventually free humanity from the whims of her mother's people.
             To this day, she still has no idea who her father was.`
-                , pic: './assets/img/ac24/alicia.png'
+                , pic: `${img}/alicia.png`
                 , summary: 'Description'
             }
         },
@@ -258,7 +262,7 @@ export function acn() {
         {
             name: 'Alexander Stranger'
             , title: 'A brand new world'
-            , download: './assets/files/Alexander_Stranger.docx'
+            , download: `${file}/Alexander_Stranger.docx`
             , slot: '7-2'
             , gm: 'Paul J'
             , stats: [
@@ -311,7 +315,7 @@ export function acn() {
             , desc: {
                 blurb: `Mister Stranger is a bit of a dreamer, a man of wealth and taste, who likes to think about things. He’s not a fighter, but he does have staying power. He takes great pride in his suit, which was tailor made for him; after all, as the song goes: every girl crazy for a sharp dressed man.
 A while ago, he picked up a strange looking key. He’s not quite sure what it opens, as of yet… but it feels like it will unlock something important.`
-                , pic: './assets/img/ac24/alexander.png'
+                , pic: `${img}/alexander.png`
                 , summary: 'Description'
             }
         },
