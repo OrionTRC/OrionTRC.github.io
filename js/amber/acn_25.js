@@ -1,6 +1,6 @@
 export function acn() {
     const
-        img = '../assets/files/ac25'
+        img = '../assets/img/ac25'
         , file = '../assets/files/ac25';
 
     return {
